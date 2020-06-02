@@ -5,9 +5,13 @@
  */
 package com.hadoop.controller;
 
+import com.hadoop.model.LinuxHost;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 
@@ -18,15 +22,17 @@ import org.apache.log4j.Logger;
 public class LoadConfigController {
     private final Logger log=Logger.getLogger(LoadConfigController.class);
     private final Properties prop = new Properties();
+    
+    private List<LinuxHost> hostlist=null;
     public int loadFile(){
-        File file = new File("hadoop.properties");
+        File file = new File("config.properties");
         if(!file.exists()){
-            log.error("File "+file.getAbsolutePath()+"hadoop.properties is not exist.");
+            log.error("File "+file.getAbsolutePath()+"config.properties is not exist.");
             return 0;
         }
         //加载配置
         try{
-            prop.load(new FileInputStream("hadoop.properties"));
+            prop.load(new FileInputStream("config.properties"));
         }catch(IOException e){
             log.error(e.toString());
             return 0;
@@ -34,5 +40,22 @@ public class LoadConfigController {
         return 1;
     }
     
-
+    public List<LinuxHost> getcfgHosts(){
+        String[] hosts=prop.getProperty("hosts").split(",");
+        hostlist=new ArrayList<>();
+        for (String host : hosts) {
+            LinuxHost linuxhost=new LinuxHost();
+            linuxhost.setIP(host);
+            linuxhost.setUser(prop.getProperty("user"));
+            linuxhost.setPassword(prop.getProperty("password"));
+            linuxhost.setPort(Integer.parseInt(prop.getProperty("port")));
+            hostlist.add(linuxhost);
+        }
+        return hostlist;
+    }
+    
+    public List<LinuxHost> getHosts(){
+        return this.hostlist;
+    }
+    
 }

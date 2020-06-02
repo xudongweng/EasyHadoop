@@ -5,17 +5,12 @@
  */
 package com.hadoop;
 
-import com.hadoop.controller.LoadConfigController;
-import java.util.List;
-
 /**
  *
  * @author sheriff
  */
-public class SSHDeploy {
+public class UpLoad {
     public static void main(String[] args){
-        LoadConfigController lcc=new LoadConfigController();
-        lcc.loadFile();
-        
+    
     }
 }
