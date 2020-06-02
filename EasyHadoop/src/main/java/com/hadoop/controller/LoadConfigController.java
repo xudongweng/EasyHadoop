@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Properties;
 import org.apache.log4j.Logger;
@@ -46,16 +45,12 @@ public class LoadConfigController {
         for (String host : hosts) {
             LinuxHost linuxhost=new LinuxHost();
             linuxhost.setIP(host);
-            linuxhost.setUser(prop.getProperty("user"));
-            linuxhost.setPassword(prop.getProperty("password"));
+            linuxhost.setUser(prop.getProperty("sshuser"));
+            linuxhost.setPassword(prop.getProperty("sshpassword"));
             linuxhost.setPort(Integer.parseInt(prop.getProperty("port")));
             hostlist.add(linuxhost);
         }
         return hostlist;
-    }
-    
-    public List<LinuxHost> getHosts(){
-        return this.hostlist;
     }
     
 }

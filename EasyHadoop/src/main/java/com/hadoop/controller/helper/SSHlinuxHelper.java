@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Vector;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -25,8 +26,14 @@ import java.util.Vector;
 public class SSHlinuxHelper {
     private JSch jsch;
     private Session session;
+    private Logger log=null;
     
-    public void execCmd(String host,String user,String password,String command){
+    public SSHlinuxHelper(){
+        this.log=Logger.getLogger(SSHlinuxHelper.class);
+    }
+    
+    public String execCmd(String host,String user,String password,String command){
+        StringBuilder sb=new StringBuilder();
         try {
             //1、创建JSch类，好比是FlashFXP工具
             jsch = new JSch();
@@ -51,17 +58,63 @@ public class SSHlinuxHelper {
                 reader = new BufferedReader(new InputStreamReader(in));
                 String buf = null;
                 while ((buf = reader.readLine()) != null) {
-                    System.out.println(buf);
+                    //System.out.println(buf);
+                    sb.append(buf);
                 }
                 reader.close();
             }catch(IOException e){
-                System.out.println(e.toString());
+                log.error(e.toString());
             }
             channel.disconnect();
             session.disconnect();
         } catch (JSchException e) {
-            System.out.println(e.toString());
+            log.error(e.toString());
         }
+        return sb.toString();
+    }
+    
+    public String execCmd(String host,String user,String password,int port,String command){
+        StringBuilder sb=new StringBuilder();
+        try {
+            //1、创建JSch类，好比是FlashFXP工具
+            jsch = new JSch();
+            //2、创建本次的文件传输会话对象，并连接到SFTP服务器。它好比是通过FlashFXP工具连接到SFTP服务器
+            session = jsch.getSession(user, host, port);
+            session.setPassword(password);
+            java.util.Properties config = new java.util.Properties();
+            config.put("StrictHostKeyChecking", "no");
+            session.setConfig(config);
+            session.connect();
+            
+            Channel channel = session.openChannel("exec");
+            ((ChannelExec) channel).setCommand(command);
+            
+            channel.setInputStream(null);
+            ((ChannelExec) channel).setErrStream(System.err);
+            
+            channel.connect();
+            BufferedReader reader = null;
+            
+            try{
+                InputStream in = channel.getInputStream();
+                reader = new BufferedReader(new InputStreamReader(in));
+                
+                String buf = null;
+                while ((buf = reader.readLine()) != null) {
+                    //System.out.println(buf);
+                    sb.append(buf);
+                }
+                reader.close();
+                
+            }catch(IOException e){
+                log.error(e.toString());
+            }
+            channel.disconnect();
+            session.disconnect();
+        } catch (JSchException e) {
+            log.error(e.toString());
+        }
+        return sb.toString();
     }
     
     public void filelist(String host,String user,String password,String path){
@@ -77,6 +130,7 @@ public class SSHlinuxHelper {
             session.connect();
             //3、在该session会话中开启一个SFTP通道，之后就可以在该通道中进行文件传输了
             ChannelSftp channelSftp = (ChannelSftp)session.openChannel("sftp");
+            
             channelSftp.connect();
             try {
                 //channelSftp.setFilenameEncoding("gbk");
@@ -88,12 +142,12 @@ public class SSHlinuxHelper {
                     }
                 }
             } catch (SftpException e) {
-                System.out.println(e.toString());
+                log.error(e.toString());
             }
             channelSftp.disconnect();
             session.disconnect();
         }catch (JSchException e) {
-            System.out.println(e.toString());
+            log.error(e.toString());
         }
     }
     
@@ -125,7 +179,7 @@ public class SSHlinuxHelper {
                 session.disconnect();
             }
         }catch (JSchException e) {
-            System.out.println(e.toString());
+            log.error(e.toString());
         }
     }
 }
