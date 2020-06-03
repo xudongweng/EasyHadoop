@@ -5,6 +5,8 @@
  */
 package com.hadoop.model;
 
+import java.util.HashMap;
+
 /**
  *
  * @author sheriff
@@ -15,6 +17,8 @@ public class LinuxHost {
     private String user="root";
     private String password="123456";
     private int port=22;
+    private HashMap<String, String> keys = new HashMap<>();
+    
     
     public LinuxHost(){}
     public LinuxHost(String hostname,String ip,String user,String password,int port){
@@ -25,6 +29,17 @@ public class LinuxHost {
         this.port=port;
     }
     
+    public void putKey(String key,String val){
+        keys.put(key, val);
+    }
+    
+    public String getValue(String key){
+        return keys.get(key);
+    }
+    
+    public HashMap<String, String> getKeys(){
+        return this.keys;
+    }
     
     public void setHostname(String hostname){
         this.hostname=hostname;
