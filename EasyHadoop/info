@@ -1,2 +1,78 @@
-2020-06-03 17:31:16 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:72) ]
-WARN:192.168.3.70:192.168.3.70 and 192.168.3.71's hostname is same,but key is different.[ssh-rsa XAAAB3NzaC1yc2EAAAADAQABAAABAQDCaavZNg05LIPVthrIfwf1mxzvvnEN8KD7xNb6LjqTyrjlIeoVoKXPtMDqAdYFJFKIrsQxd6Nq5anGz2Q7kUryeqJ9egT7VtXi+ddFEYSaGaUK82WIdsLWbDb1yb79Ns3lzMUDDwlLVaZ0nnfecvX8Tz6YTr9eaK6NGx1JPyAtPDfeP9DKBof9lVTC4kWK57IGMmSPPlS+C3nNll/sgJcFh39xQ+RzibrrLVmhM9Ziv1WYBwLsey5lgQjMCJi0NJDX+7Lve+PbqYouMiUVqPksSqAVExonovqK+ky/kg/X5Si+VLulKpEXE+w/76vpb6Z2M20b8k2VkBf5XTDWSKPt root@c7a][ssh-rsa XAAAB3NzaC1yc2EAAAADAQABAAABAQDCaavZNg05LIPVthrIfwf1mxzvvnEN8KD7xNb6LjqTyrjlIeoVoKXPtMDqAdYFJFKIrsQxd6Nq5anGz2Q7kUryeqJ9egT7VtXi+ddFEYSaGaUK82WIdsLWbDb1yb79Ns3lzMUDDwlLVaZ0nnfecvX8Tz6YTr9eaK6NGx1JPyAtPDfeP9DKBof9lVTC4kWK57IGMmSPPlS+C3nNll/sgJcFh39xQ+RzibrrLVmhM9Ziv1WYBwLsey5lgQjMCJi0NJDX+7Lve+PbqYouMiUVqPksSqAVExonovqK+ky/kg/X5Si+VLulKpEXE+w/76vpb6Z2M20b8k2VkBf5XTDWSKPt root@c7a]
+2020-06-04 10:35:16 上午 [Thread: main][ Method: com.hadoop.controller.helper.SSHlinuxHelper.execCmd(SSHlinuxHelper.java:115) ]
+ERROR:com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect
+2020-06-04 10:35:16 上午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+INFO:192.168.3.70:.ssh/authorized_keys is not exist.
+2020-06-04 10:35:37 上午 [Thread: main][ Method: com.hadoop.controller.helper.SSHlinuxHelper.execCmd(SSHlinuxHelper.java:115) ]
+ERROR:com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect
+2020-06-04 10:35:37 上午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:37) ]
+INFO:192.168.3.70 :  .ssh/id_rsa.pub is not exist.
+2020-06-04 10:40:08 上午 [Thread: main][ Method: com.hadoop.controller.helper.SSHlinuxHelper.execCmd(SSHlinuxHelper.java:115) ]
+ERROR:com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect
+2020-06-04 13:45:39 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+INFO:192.168.3.70:.ssh/authorized_keys is not exist.
+2020-06-04 13:45:39 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:37) ]
+INFO:192.168.3.70 :  .ssh/id_rsa.pub is not exist.
+2020-06-04 13:50:37 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+ERROR:192.168.3.70 : .ssh/authorized_keys is not exist.
+2020-06-04 13:50:38 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:41) ]
+INFO:192.168.3.70 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-06-04 13:50:38 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+ERROR:192.168.3.71 : .ssh/authorized_keys is not exist.
+2020-06-04 13:50:39 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:41) ]
+INFO:192.168.3.71 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-06-04 13:50:39 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+ERROR:192.168.3.72 : .ssh/authorized_keys is not exist.
+2020-06-04 13:50:40 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:41) ]
+INFO:192.168.3.72 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-06-04 13:56:00 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+ERROR:192.168.3.70 : .ssh/authorized_keys is not exist.
+2020-06-04 13:56:00 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:37) ]
+ERROR:192.168.3.70 :  .ssh/id_rsa.pub is not exist.Please execute ssh-keygen -t rsa
+2020-06-04 13:57:00 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+ERROR:192.168.3.70 : .ssh/authorized_keys is not exist.
+2020-06-04 13:57:01 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:41) ]
+INFO:192.168.3.70 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-06-04 13:57:03 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+ERROR:192.168.3.71 : .ssh/authorized_keys is not exist.
+2020-06-04 13:57:04 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:41) ]
+INFO:192.168.3.71 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-06-04 13:57:04 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:33) ]
+ERROR:192.168.3.72 : .ssh/authorized_keys is not exist.
+2020-06-04 13:57:05 下午 [Thread: main][ Method: com.hadoop.SSHDeploy.main(SSHDeploy.java:41) ]
+INFO:192.168.3.72 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7generate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7generate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7generate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7generate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7generate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7generate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7agenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7agenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7agenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7agenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7agenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7agenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7bgenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7bgenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7bgenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7bgenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7bgenerate new authorized_keys
+2020-06-04 14:14:25 下午 [Thread: main][ Method: com.hadoop.controller.HostConfigController.config(HostConfigController.java:63) ]
+INFO:c7bgenerate new authorized_keys
