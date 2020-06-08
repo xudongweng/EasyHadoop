@@ -5,7 +5,6 @@
  */
 package com.hadoop;
 
-import com.hadoop.controller.HostConfigController;
 import com.hadoop.controller.LoadConfigController;
 import com.hadoop.model.LinuxHost;
 import java.util.List;
@@ -15,13 +14,11 @@ import org.apache.log4j.Logger;
  *
  * @author sheriff
  */
-public class SSHDeploy {
+public class ZookeeperGenerate {
     public static void main(String[] args){
-        Logger log=Logger.getLogger(SSHDeploy.class);
+        Logger log=Logger.getLogger(ZookeeperGenerate.class);
         LoadConfigController lcc=new LoadConfigController();
         if(lcc.loadFile()==0)return;
         List<LinuxHost> hostlist=lcc.getcfgHosts();
-        HostConfigController bcc=new HostConfigController();
-        bcc.configSSH(hostlist);
     }
 }

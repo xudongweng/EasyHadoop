@@ -18,7 +18,7 @@ import org.apache.log4j.Logger;
  */
 public class HostConfigController {
     private Logger log=Logger.getLogger(HostConfigController.class);
-    public void configSSH(List<LinuxHost> hostlist){
+    public int configSSH(List<LinuxHost> hostlist){
         SSHlinuxHelper ssh=new SSHlinuxHelper();
         
         for(LinuxHost host:hostlist){
@@ -31,7 +31,7 @@ public class HostConfigController {
                 //检查id_rsa.pub是否存在，生成新的authorized_keys文件
                 if(id_rsa.contains("cat .ssh/id_rsa.pub")||id_rsa.equals("")){
                     log.error(host.getIP()+" : "+".ssh/id_rsa.pub is not exist.Please execute ssh-keygen -t rsa");
-                    return;
+                    return 0;
                 }
                 ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "cd ~ \n mv .ssh/id_rsa.pub .ssh/authorized_keys");
                 log.info(host.getIP()+" : "+"mv .ssh/ id_rsa.pub .ssh/authorized_keys.");
@@ -75,6 +75,6 @@ public class HostConfigController {
                  }
              }
         }
-        
+        return 1;
     }
 }
