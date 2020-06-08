@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.controller.helper;
+package com.hadoop.controller.compress.helper;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -29,11 +29,11 @@ public class ZipFolderHelper {
     /**
      * 压缩
      * 
-     * @param strFile
+     * @param srcDir
      * @throws Exception
      */
-    public void compress(String strFile) throws Exception {
-        File srcFile = new File(strFile);
+    public void compress(String srcDir) throws Exception {
+        File srcFile = new File(srcDir);
         String name = srcFile.getName();
         String basePath = srcFile.getParent();
         String destPath = basePath +File.separator+ name + EXT;
@@ -148,9 +148,7 @@ public class ZipFolderHelper {
          * </pre>
          */
         ZipEntry entry = new ZipEntry(dir + file.getName());
-
         zos.putNextEntry(entry);
-
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file));
 
         int count;

@@ -1,4 +1,4 @@
-package com.hadoop.controller.helper;
+package com.hadoop.controller.compress.helper;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -15,18 +15,18 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.zip.GZIPInputStream;
+import org.apache.log4j.Logger;
 
 /**
  *
  * @author sheriff
  */
 public class UnTarGzHelper {
-
- 
-    public static void main(String[] args) {
-        deCompressGZipFile("D:\\software\\zookeeper-3.4.14.tar.gz", "D:\\software\\zookeeper");
+    private Logger log=null;
+    
+    public UnTarGzHelper(){
+        this.log=Logger.getLogger(UnTarGzHelper.class);
     }
- 
     /**
      * Tar文件解压方法
      *
@@ -34,15 +34,15 @@ public class UnTarGzHelper {
      * @param destDir   解压后文件放置的路径名（绝对路径名称）当路径不存在，会自动创建
      * @return 解压出的文件列表
      */
-    public static void deCompressGZipFile(String tarGzFile, String destDir) {
+    public void unCompressGZipFile(String tarGzFile, String destDir) {
  
         // 建立输出流，用于将从压缩文件中读出的文件流写入到磁盘
         TarArchiveEntry entry = null;
         TarArchiveEntry[] subEntries = null;
         File subEntryFile = null;
         try (FileInputStream fis = new FileInputStream(tarGzFile);
-             GZIPInputStream gis = new GZIPInputStream(fis);
-             TarArchiveInputStream taris = new TarArchiveInputStream(gis);) {
+            GZIPInputStream gis = new GZIPInputStream(fis);
+            TarArchiveInputStream taris = new TarArchiveInputStream(gis);) {
             while ((entry = taris.getNextTarEntry()) != null) {
                 StringBuilder entryFileName = new StringBuilder();
                 entryFileName.append(destDir).append(File.separator).append(entry.getName());
@@ -57,28 +57,29 @@ public class UnTarGzHelper {
                             subEntryFile = new File(entryFileName + File.separator + subEntries[i].getName());
                             IOUtils.copy(taris, out);
                         } catch (Exception e) {
-e.printStackTrace();
+                            log.error(e.toString());
                         }
                     }
-                } else {
+                } 
+                else {
                     checkFileExists(entryFile);
                     OutputStream out = new FileOutputStream(entryFile);
                     IOUtils.copy(taris, out);
                     out.close();
                     //如果是gz文件进行递归解压
                     if (entryFile.getName().endsWith(".gz")) {
-                        deCompressGZipFile(entryFile.getPath(), destDir);
+                        unCompressGZipFile(entryFile.getPath(), destDir);
                     }
                 }
             }
             //如果需要刪除之前解压的gz文件，在这里进行
  
         } catch (Exception e) {
-            e.printStackTrace();
+            log.error(e.toString());
         }
     }
  
-    public static void checkFileExists(File file) {
+    public void checkFileExists(File file) {
         //判断是否是目录
         if (file.isDirectory()) {
             if (!file.exists()) {
@@ -92,7 +93,7 @@ e.printStackTrace();
             try {
                 file.createNewFile();
             } catch (IOException e) {
-                e.printStackTrace();
+                log.error(e.toString());
             }
         }
     }
