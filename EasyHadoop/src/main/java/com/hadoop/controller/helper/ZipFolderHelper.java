@@ -18,7 +18,7 @@ import java.util.zip.ZipOutputStream;
  *
  * @author sheriff
  */
-public class ZipUtilsHelper {
+public class ZipFolderHelper {
     public final String EXT = ".zip";
     private final String BASE_DIR = "";
 
