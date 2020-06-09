@@ -5,7 +5,7 @@
  */
 package com.hadoop.controller;
 
-import com.hadoop.controller.helper.SSHlinuxHelper;
+import com.hadoop.controller.helper.SSHLinuxHelper;
 import com.hadoop.model.LinuxHost;
 import java.util.Iterator;
 import java.util.List;
@@ -16,10 +16,10 @@ import org.apache.log4j.Logger;
  *
  * @author sheriff
  */
-public class HostConfigController {
-    private Logger log=Logger.getLogger(HostConfigController.class);
+public class SSHConfigController {
+    private Logger log=Logger.getLogger(SSHConfigController.class);
     public int configSSH(List<LinuxHost> hostlist){
-        SSHlinuxHelper ssh=new SSHlinuxHelper();
+        SSHLinuxHelper ssh=new SSHLinuxHelper();
         
         for(LinuxHost host:hostlist){
             //验证ssh-keygen
@@ -36,7 +36,12 @@ public class HostConfigController {
                 ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "cd ~ \n mv .ssh/id_rsa.pub .ssh/authorized_keys");
                 log.info(host.getIP()+" : "+"mv .ssh/ id_rsa.pub .ssh/authorized_keys.");
             }
-            host.setHostname(ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "hostname"));
+            String hostname=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "hostname");
+            if(hostname.equals("")) {
+                log.error(host.getIP()+" : "+"hostname is null.");
+                return 0;
+            }
+            host.setHostname(hostname);
             //将单个文件authorized_keys的多个key拆分成哈希表，进行后期验证
             while(authorized_keys.length()>381){
                 //System.out.println(authorized_keys.indexOf("ssh-rsa",381));

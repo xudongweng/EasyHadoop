@@ -23,15 +23,15 @@ public class LoadConfigController {
     private final Properties prop = new Properties();
     
     private List<LinuxHost> hostlist=null;
-    public int loadFile(){
-        File file = new File("config.properties");
+    public int loadFile(String cfgfile){
+        File file = new File(cfgfile);
         if(!file.exists()){
-            log.error("File "+file.getAbsolutePath()+"config.properties is not exist.");
+            log.error("File "+file.getAbsolutePath()+cfgfile+" is not exist.");
             return 0;
         }
         //加载配置
         try{
-            prop.load(new FileInputStream("config.properties"));
+            prop.load(new FileInputStream(cfgfile));
         }catch(IOException e){
             log.error(e.toString());
             return 0;
@@ -53,4 +53,7 @@ public class LoadConfigController {
         return hostlist;
     }
     
+    public void getZoo(){
+        
+    }
 }

@@ -23,13 +23,13 @@ import org.apache.log4j.Logger;
  *
  * @author sheriff
  */
-public class SSHlinuxHelper {
+public class SSHLinuxHelper {
     private JSch jsch;
     private Session session;
     private Logger log=null;
     
-    public SSHlinuxHelper(){
-        this.log=Logger.getLogger(SSHlinuxHelper.class);
+    public SSHLinuxHelper(){
+        this.log=Logger.getLogger(SSHLinuxHelper.class);
     }
     
     public String execCmd(String host,String user,String password,String command){

@@ -17,9 +17,6 @@ import org.apache.log4j.Logger;
  */
 public class HadoopGenerate {
     public static void main(String[] args){
-        Logger log=Logger.getLogger(HadoopGenerate.class);
-        LoadConfigController lcc=new LoadConfigController();
-        if(lcc.loadFile()==0)return;
-        List<LinuxHost> hostlist=lcc.getcfgHosts();
+        
     }
 }

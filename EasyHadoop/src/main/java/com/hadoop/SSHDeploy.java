@@ -5,7 +5,7 @@
  */
 package com.hadoop;
 
-import com.hadoop.controller.HostConfigController;
+import com.hadoop.controller.SSHConfigController;
 import com.hadoop.controller.LoadConfigController;
 import com.hadoop.model.LinuxHost;
 import java.util.List;
@@ -19,9 +19,9 @@ public class SSHDeploy {
     public static void main(String[] args){
         Logger log=Logger.getLogger(SSHDeploy.class);
         LoadConfigController lcc=new LoadConfigController();
-        if(lcc.loadFile()==0)return;
+        if(lcc.loadFile("config.properties")==0)return;
         List<LinuxHost> hostlist=lcc.getcfgHosts();
-        HostConfigController bcc=new HostConfigController();
+        SSHConfigController bcc=new SSHConfigController();
         bcc.configSSH(hostlist);
     }
 }
