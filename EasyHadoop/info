@@ -1,0 +1,2 @@
+2020-06-10 17:43:53 обнГ [Thread: main][ Method: com.hadoop.controller.helper.SSHLinuxHelper.execCmd(SSHLinuxHelper.java:71) ]
+ERROR:com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect

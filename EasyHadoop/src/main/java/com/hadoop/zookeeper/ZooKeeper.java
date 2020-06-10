@@ -9,12 +9,12 @@ package com.hadoop.zookeeper;
  *
  * @author sheriff
  */
-public class Zoo {
+public class ZooKeeper {
     private int tickTime=2000;
     private int initLimit=10;
     private int syncLimit=5;
     private String dataDir="/usr/local/zookeeper/data";
-    private int clientPort=2181;
+    private int clientPort=2181;    
     
     public void setTickTime(int tickTime){
         this.tickTime=tickTime;

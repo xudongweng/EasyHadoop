@@ -5,7 +5,9 @@
  */
 package com.hadoop.controller;
 
+import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
+import com.hadoop.zookeeper.ZooKeeper;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -22,7 +24,7 @@ public class LoadConfigController {
     private final Logger log=Logger.getLogger(LoadConfigController.class);
     private final Properties prop = new Properties();
     
-    private List<LinuxHost> hostlist=null;
+    //private List<LinuxHost> hostlist=null;
     public int loadFile(String cfgfile){
         File file = new File(cfgfile);
         if(!file.exists()){
@@ -41,7 +43,7 @@ public class LoadConfigController {
     
     public List<LinuxHost> getcfgHosts(){
         String[] hosts=prop.getProperty("hosts").split(",");
-        hostlist=new ArrayList<>();
+        List<LinuxHost> hostlist=new ArrayList<>();
         for (String host : hosts) {
             LinuxHost linuxhost=new LinuxHost();
             linuxhost.setIP(host);
@@ -53,7 +55,21 @@ public class LoadConfigController {
         return hostlist;
     }
     
-    public void getZoo(){
-        
+    public InstallFiles getInstallFiles(){
+        InstallFiles files=new InstallFiles();
+        files.setJDK(prop.getProperty("jdk"));
+        files.setZooKeeper(prop.getProperty("zookeeper"));
+        files.setHadoop(prop.getProperty("hadoop"));
+        return files;
+    }
+    
+    public ZooKeeper getZoo(){
+        ZooKeeper zoo=new ZooKeeper();
+        zoo.setClientPort(Integer.parseInt(prop.getProperty("clientPort")));
+        zoo.setDataDir(prop.getProperty("dataDir"));
+        zoo.setInitLimit(Integer.parseInt(prop.getProperty("initLimit")));
+        zoo.setSyncLimit(Integer.parseInt(prop.getProperty("syncLimit")));
+        zoo.setTickTime(Integer.parseInt(prop.getProperty("tickTime")));
+        return zoo;
     }
 }

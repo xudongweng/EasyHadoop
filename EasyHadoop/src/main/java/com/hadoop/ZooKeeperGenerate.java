@@ -7,7 +7,9 @@ package com.hadoop;
 
 import com.hadoop.controller.LoadConfigController;
 import com.hadoop.controller.helper.SSHLinuxHelper;
+import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
+import com.hadoop.zookeeper.ZooKeeper;
 import java.util.List;
 import org.apache.log4j.Logger;
 
@@ -15,11 +17,14 @@ import org.apache.log4j.Logger;
  *
  * @author sheriff
  */
-public class ZookeeperGenerate {
+public class ZooKeeperGenerate {
     public static void main(String[] args){
-        Logger log=Logger.getLogger(ZookeeperGenerate.class);
+        Logger log=Logger.getLogger(ZooKeeperGenerate.class);
         LoadConfigController lcc=new LoadConfigController();
-        if(lcc.loadFile("zoo.properties")==0)return;
+        if(lcc.loadFile("config.properties")==0)return;
+        
+        InstallFiles files=lcc.getInstallFiles();
+        
         List<LinuxHost> hostlist=lcc.getcfgHosts();
         SSHLinuxHelper ssh=new SSHLinuxHelper();
         
@@ -29,7 +34,10 @@ public class ZookeeperGenerate {
                 log.error(host.getIP()+" : "+"hostname is null.");
                 return;
             }
-            System.out.println(host.getHostname());
+            //System.out.println(host.getHostname());
         }
+        if(lcc.loadFile("zoo.properties")==0)return;
+        ZooKeeper zoo=lcc.getZoo();
+        
     }
 }
