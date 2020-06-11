@@ -61,7 +61,7 @@ public class SSHConfigController {
         //1)对比主机名是否存在响应的ssh-keygen
         //2)存在主机名相同的情况下，ssh-keygen是否相同
         for(LinuxHost host1:hostlist){
-             log.info("Host "+host1.getHostname()+" composes authorized_keys.");
+             log.info(host1.getHostname()+" : compose authorized_keys.");
              for(LinuxHost host2:hostlist){
                  if(!host1.getIP().equals(host2.getIP())){
                      Iterator iter = host2.getKeys().entrySet().iterator();
@@ -71,18 +71,19 @@ public class SSHConfigController {
                          //System.out.println(host1.getValue(entry.getKey().toString()));
                          if(host1.getValue(entry.getKey().toString())==null){//没找到相同主机名
                              ssh.execCmd(host1.getIP(), host1.getUser(), host1.getPassword(),host1.getPort(), "cd ~ \n sh -c \"echo "+entry.getValue().toString()+">> .ssh/authorized_keys\"");
-                             log.info("Host "+host1.getHostname()+" and "+host2.getHostname()+" generate new authorized_keys.");
+                             log.info(host1.getHostname()+" : "+host1.getHostname()+" and "+host2.getHostname()+" generate new authorized_keys.");
                          }else if(!host1.getValue(entry.getKey().toString()).equals(entry.getValue().toString())){//主机名相同，但ssh-keygen不同
                              log.warn(host1.getIP()+" : "+host1.getIP()+" and "+host2.getIP()+"'s hostname is same,but key is different.["+host1.getValue(entry.getKey().toString())+"]["+
                                      host1.getValue(entry.getKey().toString())+"]");
                              ssh.execCmd(host1.getIP(), host1.getUser(), host1.getPassword(),host1.getPort(), "cd ~ \n sh -c echo \""+entry.getValue().toString()+">> .ssh/authorized_keys\"");
-                             log.info("Host "+host1.getHostname()+" and "+host2.getHostname()+" generate new authorized_keys.");
+                             log.info(host1.getHostname()+" : "+host1.getHostname()+" and "+host2.getHostname()+" generate new authorized_keys.");
                          }
                      }
-                     log.info("----------------------------------------------------------------------------------------");
                  }
              }
+             log.info(host1.getHostname()+" :"+host1.getHostname()+" key has deployed.");
         }
+        
         return 1;
     }
 }

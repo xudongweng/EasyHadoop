@@ -9,7 +9,6 @@ import com.hadoop.controller.SSHConfigController;
 import com.hadoop.controller.LoadConfigController;
 import com.hadoop.model.LinuxHost;
 import java.util.List;
-import org.apache.log4j.Logger;
 
 /**
  *
@@ -17,7 +16,6 @@ import org.apache.log4j.Logger;
  */
 public class SSHDeploy {
     public static void main(String[] args){
-        Logger log=Logger.getLogger(SSHDeploy.class);
         LoadConfigController lcc=new LoadConfigController();
         if(lcc.loadFile("config.properties")==0)return;
         List<LinuxHost> hostlist=lcc.getcfgHosts();
