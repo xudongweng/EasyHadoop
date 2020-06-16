@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.hadoop.controller.helper;
+package com.hadoop.helper;
 
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelExec;

@@ -5,12 +5,15 @@
  */
 package com.easyhadoopmonitor;
 
+import com.easyhadoopmonitor.controller.xmlrpc.RPCZooKeeperController;
+
 /**
  *
  * @author sheriff
  */
 public class ZooKeeperMonitor {
     public static void main(String[] args) {
-    
+        RPCZooKeeperController rpczkc=new RPCZooKeeperController();
+        rpczkc.startServer();
     }
 }

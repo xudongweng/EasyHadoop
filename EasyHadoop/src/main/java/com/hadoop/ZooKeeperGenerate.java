@@ -6,7 +6,7 @@
 package com.hadoop;
 
 import com.hadoop.controller.LoadConfigController;
-import com.hadoop.controller.helper.SSHLinuxHelper;
+import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
 import com.hadoop.zookeeper.ZooKeeper;

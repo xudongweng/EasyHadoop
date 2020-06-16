@@ -5,7 +5,7 @@
  */
 package com.hadoop.controller;
 
-import com.hadoop.controller.helper.SSHLinuxHelper;
+import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.LinuxHost;
 import java.util.Iterator;
 import java.util.List;

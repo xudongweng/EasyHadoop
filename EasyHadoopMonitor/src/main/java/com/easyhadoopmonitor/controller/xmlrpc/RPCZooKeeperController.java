@@ -19,14 +19,23 @@ import org.apache.xmlrpc.webserver.WebServer;
 public class RPCZooKeeperController {
     private WebServer web_server;
     private Logger log=Logger.getLogger(RPCZooKeeperController.class);
+    
+    public RPCZooKeeperController(){
+        try {
+            this.web_server = new WebServer(10080);
+        } catch (Exception e) {
+            log.error(e.toString());
+        }
+    }
+    
     public void startServer(){
         // XmlRpcServer服务
 	XmlRpcServer xmlRpcServer = web_server.getXmlRpcServer();
         // 处理程序映射
 	PropertyHandlerMapping phm = new PropertyHandlerMapping();
         try {
-                // 为服务添加方法
-                // ZooKeeper服务->XmlRpcHandler.class类
+            // 为服务添加方法
+            // ZooKeeper服务->XmlRpcHandler.class类
             phm.addHandler("ZooKeeper", XmlRpcZooKeeperHandler.class);
         } catch (XmlRpcException e) {
             log.error(e.toString());
@@ -39,4 +48,5 @@ public class RPCZooKeeperController {
             log.error(e.toString());
         }
     }
+
 }

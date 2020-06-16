@@ -1,4 +1,4 @@
-package com.hadoop.controller.compress.helper;
+package com.hadoop.helper.compress;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
