@@ -12,7 +12,7 @@ import java.util.List;
  * @author sheriff
  */
 public class XmlRpcZooKeeperHandler {
-    public String insertInfo(String filepath,List<String> info){
-        return info.toString();
+    public String insertInfo(String filepath,List<String> zookeeperinfo){
+        return zookeeperinfo.toString();
     }
 }
