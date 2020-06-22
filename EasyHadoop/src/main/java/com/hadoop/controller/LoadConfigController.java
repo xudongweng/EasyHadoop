@@ -7,12 +7,14 @@ package com.hadoop.controller;
 
 import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
-import com.hadoop.zookeeper.ZooKeeper;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 import org.apache.log4j.Logger;
 
@@ -63,13 +65,14 @@ public class LoadConfigController {
         return files;
     }
     
-    public ZooKeeper getZoo(){
-        ZooKeeper zoo=new ZooKeeper();
-        zoo.setClientPort(Integer.parseInt(prop.getProperty("clientPort")));
-        zoo.setDataDir(prop.getProperty("dataDir"));
-        zoo.setInitLimit(Integer.parseInt(prop.getProperty("initLimit")));
-        zoo.setSyncLimit(Integer.parseInt(prop.getProperty("syncLimit")));
-        zoo.setTickTime(Integer.parseInt(prop.getProperty("tickTime")));
-        return zoo;
+    public Map<String,String> getZoo(){
+        Enumeration<Object> keys = prop.keys();
+        Map<String,String> map = new HashMap<>();
+        while (keys.hasMoreElements()) {
+            String key = (String) keys.nextElement();
+            //System.out.println(key + "=" + prop.getProperty(key));
+            map.put(key,  prop.getProperty(key));
+        }
+        return map;
     }
 }

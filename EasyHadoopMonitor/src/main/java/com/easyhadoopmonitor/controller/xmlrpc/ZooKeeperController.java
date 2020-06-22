@@ -8,7 +8,6 @@ package com.easyhadoopmonitor.controller.xmlrpc;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import org.apache.log4j.Logger;
