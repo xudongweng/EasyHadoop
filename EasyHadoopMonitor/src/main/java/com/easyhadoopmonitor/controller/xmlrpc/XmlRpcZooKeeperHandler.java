@@ -5,14 +5,14 @@
  */
 package com.easyhadoopmonitor.controller.xmlrpc;
 
-import java.util.List;
+import java.util.Map;
 
 /**
  *
  * @author sheriff
  */
 public class XmlRpcZooKeeperHandler {
-    public String insertInfo(String filepath,List<String> zookeeperinfo){
-        return zookeeperinfo.toString();
+    public String write(String filepath,Map<String,String> zoomap){
+        return zoomap.toString();
     }
 }
