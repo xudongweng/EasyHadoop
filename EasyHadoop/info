@@ -1,12 +1,18 @@
-2020-06-22 17:34:37 下午 [Thread: main][ Method: com.hadoop.helper.SSHLinuxHelper.execCmd(SSHLinuxHelper.java:115) ]
+2020-06-23 10:54:13 上午 [Thread: main][ Method: com.hadoop.helper.SSHLinuxHelper.execCmd(SSHLinuxHelper.java:115) ]
 ERROR:com.jcraft.jsch.JSchException: java.net.ConnectException: Connection timed out: connect
-2020-06-22 17:34:37 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:34) ]
+2020-06-23 10:54:13 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:34) ]
 ERROR:192.168.3.71 : hostname is null.
-2020-06-22 17:35:45 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:44) ]
-INFO:c7 : Upload D:softwarezookeeper-3.4.14.tar.gz to c7.
-2020-06-22 17:37:15 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:44) ]
+2020-06-23 10:56:25 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:44) ]
 INFO:c7 : Upload D:\software\zookeeper-3.4.14.tar.gz to c7.
-2020-06-22 17:38:50 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:44) ]
-INFO:c7 : Upload D:\software\zookeeper-3.4.14.tar.gz to c7.
-2020-06-22 17:38:51 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:46) ]
+2020-06-23 10:56:26 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:46) ]
 INFO:c7 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-06-23 10:56:28 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:49) ]
+INFO:c7 : clear /tmp.
+2020-06-23 11:08:33 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:44) ]
+INFO:c7 : Upload D:\software\zookeeper-3.4.14.tar.gz to c7.
+2020-06-23 11:08:34 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:46) ]
+INFO:c7 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-06-23 11:08:36 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:49) ]
+INFO:c7 : clear /tmp.
+2020-06-23 11:08:36 上午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:51) ]
+INFO:c7 : set environment of .bashrc.
