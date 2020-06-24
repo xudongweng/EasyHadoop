@@ -11,7 +11,6 @@ import com.hadoop.controller.ZooKeeperController;
 import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.apache.log4j.Logger;
@@ -55,7 +54,7 @@ public class ZooKeeperGenerate {
         
         //System.out.println(map.toString());
         RPCClientController rpcClient=new RPCClientController();
-        String s=rpcClient.invokeZooCreate("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg");
+        int s=rpcClient.invokeZooCreate("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg");
         System.out.println(s);
     }
 }

@@ -16,8 +16,8 @@ import org.apache.log4j.Logger;
  *
  * @author sheriff
  */
-public class ZooKeeperController {
-    private Logger log=Logger.getLogger(ZooKeeperController.class);
+public class ZooKeeperConfigController {
+    private Logger log=Logger.getLogger(ZooKeeperConfigController.class);
     public int createConfig(String dir,String filename){
         File file=new File(dir,filename);
         if (file.isFile()&&file.exists()){

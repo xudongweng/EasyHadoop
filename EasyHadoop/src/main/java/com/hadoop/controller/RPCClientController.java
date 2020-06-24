@@ -19,8 +19,8 @@ import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
  */
 public class RPCClientController {
     private Logger log=Logger.getLogger(RPCClientController.class);
-    public String invokeZooCreate(String url,String dir,String filename){
-        String result = "";
+    public int invokeZooCreate(String url,String dir,String filename){
+        int result = 0;
         // XmlRpcClient
         XmlRpcClient client = new XmlRpcClient();
         // 客户端配置
@@ -37,7 +37,33 @@ public class RPCClientController {
         client.setConfig(config);
         // 远程调用
         try {
-            result = (String) client.execute("ZooKeeper.create", new Object[] { dir,filename });
+            result = (int) client.execute("ZooKeeper.createConfig", new Object[] { dir,filename });
+        } catch (XmlRpcException e) {
+            log.error(e.toString());
+        }
+        return result;
+        //System.out.println("=>Hello.sayHello方法调用返回结果: " + result);
+    }
+    
+    public int invokeZooWrite(String url,String dir,String filename,Map<String,String> propermap){
+        int result =0;
+        // XmlRpcClient
+        XmlRpcClient client = new XmlRpcClient();
+        // 客户端配置
+        XmlRpcClientConfigImpl config = new XmlRpcClientConfigImpl();
+        try {
+                // 访问服务器路径、端口
+            config.setServerURL(new URL(url));	//此10080端口正好被内嵌webServer监听；
+            //config.setServerURL(new URL("http://localhost:10080"));
+        } catch (MalformedURLException e) {
+            log.error(e.toString());
+            return result;
+        }
+        // 客户端设置
+        client.setConfig(config);
+        // 远程调用
+        try {
+            result = (int) client.execute("ZooKeeper.create", new Object[] { dir,filename,propermap });
         } catch (XmlRpcException e) {
             log.error(e.toString());
         }

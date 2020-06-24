@@ -7,14 +7,19 @@ package com.easyhadoopmonitor.controller.xmlrpc;
 
 import java.util.Map;
 
+
 /**
  *
  * @author sheriff
  */
 public class XmlRpcZooKeeperHandler {
     
+    private ZooKeeperConfigController zcc=new ZooKeeperConfigController();
+    public int createCfg(String dir,String filename){
+        return zcc.createConfig(dir, filename);
+    }
     
-    public String create(String dir,String filename){
-        return "";
+    public int writeCfg(String dir,String filename,Map<String,String> propermap){
+        return zcc.writeConfig(dir, filename,propermap);
     }
 }
