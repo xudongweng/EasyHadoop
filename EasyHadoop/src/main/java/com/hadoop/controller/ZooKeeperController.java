@@ -45,6 +45,6 @@ public class ZooKeeperController {
         log.info(host.getIP()+" : Upload "+monitorpath+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
         log.info(host.getIP()+" : Running "+filename+".");
-        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n java -cp "+filename+" com.easyhadoopmonitor.ZooKeeperMonitor & \n");//运行上传jar包
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n nohup java -cp "+filename+" com.easyhadoopmonitor.ZooKeeperMonitor >/dev/null 2>&1 &");//运行上传jar包
     }
 }

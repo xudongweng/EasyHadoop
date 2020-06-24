@@ -37,7 +37,7 @@ public class RPCClientController {
         client.setConfig(config);
         // 远程调用
         try {
-            result = (int) client.execute("ZooKeeper.createConfig", new Object[] { dir,filename });
+            result = (int) client.execute("ZooKeeper.createCfg", new Object[] { dir,filename });
         } catch (XmlRpcException e) {
             log.error(e.toString());
         }
@@ -63,7 +63,7 @@ public class RPCClientController {
         client.setConfig(config);
         // 远程调用
         try {
-            result = (int) client.execute("ZooKeeper.create", new Object[] { dir,filename,propermap });
+            result = (int) client.execute("ZooKeeper.writeCfg", new Object[] { dir,filename,propermap });
         } catch (XmlRpcException e) {
             log.error(e.toString());
         }
