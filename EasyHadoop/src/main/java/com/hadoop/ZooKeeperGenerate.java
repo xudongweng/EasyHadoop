@@ -6,11 +6,12 @@
 package com.hadoop;
 
 import com.hadoop.controller.LoadConfigController;
+import com.hadoop.controller.RPCClientController;
 import com.hadoop.controller.ZooKeeperController;
 import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
-import java.io.File;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import org.apache.log4j.Logger;
@@ -21,6 +22,7 @@ import org.apache.log4j.Logger;
  */
 public class ZooKeeperGenerate {
     public static void main(String[] args){
+        
         Logger log=Logger.getLogger(ZooKeeperGenerate.class);
         LoadConfigController lcc=new LoadConfigController();
         if(lcc.loadFile("config.properties")==0)return;
@@ -48,6 +50,12 @@ public class ZooKeeperGenerate {
             i++;
         }
         
+        LinuxHost host=hostlist.get(0);
+        zkc.configfile(hostlist, files.getMonitor());
         
+        //System.out.println(map.toString());
+        RPCClientController rpcClient=new RPCClientController();
+        String s=rpcClient.invokeZooCreate("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg");
+        System.out.println(s);
     }
 }

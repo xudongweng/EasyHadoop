@@ -13,7 +13,7 @@ public class InstallFiles {
     String jdk="";
     String zookeeper="";
     String hadoop="";
-    
+    String monitor="";
     public void setJDK(String jdk){
         this.jdk=jdk;
     }
@@ -33,5 +33,12 @@ public class InstallFiles {
     }
     public String getHadoop(){
         return this.hadoop;
+    }
+    
+    public void setMonitor(String monitor){
+        this.monitor=monitor;
+    }
+    public String getMonitor(){
+        return this.monitor;
     }
 }

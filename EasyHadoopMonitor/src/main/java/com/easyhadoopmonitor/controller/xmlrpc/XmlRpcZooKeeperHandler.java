@@ -12,7 +12,9 @@ import java.util.Map;
  * @author sheriff
  */
 public class XmlRpcZooKeeperHandler {
-    public String write(String filepath,Map<String,String> zoomap){
-        return zoomap.toString();
+    
+    
+    public String create(String dir,String filename){
+        return "";
     }
 }

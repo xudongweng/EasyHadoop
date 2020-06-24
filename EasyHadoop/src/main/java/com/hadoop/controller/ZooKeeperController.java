@@ -17,23 +17,34 @@ import org.apache.log4j.Logger;
  */
 public class ZooKeeperController {
     private Logger log=Logger.getLogger(ZooKeeperController.class);
+    private SSHLinuxHelper ssh=new SSHLinuxHelper();
     public void configZooKeeper(List<LinuxHost> hostlist,String filepath){
-        SSHLinuxHelper ssh=new SSHLinuxHelper();
+        
         LinuxHost host=hostlist.get(0);
         String dst="/tmp";
         //String filepath=files.getZooKeeper();
         String filename=filepath.substring(filepath.lastIndexOf(File.separator)+1,filepath.length());
-        log.info(host.getHostname()+" : Upload "+filepath+" to "+host.getHostname()+".");
+        log.info(host.getIP()+" : Upload "+filepath+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), filepath, dst);//上传zookeeper
-        log.info(host.getHostname()+" : Uncompress "+filename+".");
+        log.info(host.getIP()+" : Uncompress "+filename+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n tar zxf "+filename);//解压zookeeper
         String zoofile=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "ls "+dst+" |grep zookeeper |grep -v gz ");
-        log.info(host.getHostname()+" : clear "+dst+".");
+        log.info(host.getIP()+" : clear "+dst+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "rm -rf /usr/local/zookeeper \n mv "+dst+"/"+zoofile +" /usr/local/zookeeper \n rm -rf "+dst+"/*.gz");//移动解压后的zookeeper，删除上传文件
-        log.info(host.getHostname()+" : set environment of .bashrc.");
+        log.info(host.getIP()+" : set environment of .bashrc.");
         if(!ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"cd ~ \n cat .bashrc").contains("ZOOKEEPER_HOME"))//如果不包含JAVA_HOME
         {
-            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd ~ \n echo \"ZOOKEEPER_HOME=/usr/local/zookeeper export JAVA_HOME \" >> .bashrc \n echo \"PATH=\\$PATH:\\$ZOOKEEPER_HOME/bin export PATH\" >> .bashrc \n source .bashrc");
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd ~ \n echo \"ZOOKEEPER_HOME=/usr/local/zookeeper export ZOOKEEPER_HOME \" >> .bashrc \n echo \"PATH=\\$PATH:\\$ZOOKEEPER_HOME/bin export PATH\" >> .bashrc \n source .bashrc");
         }
+    }
+    
+    public void configfile(List<LinuxHost> hostlist,String monitorpath){
+        LinuxHost host=hostlist.get(0);
+        String dst="/tmp";
+        String filename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
+        log.info(host.getIP()+" : Upload "+monitorpath+" to "+host.getIP()+".");
+        ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
+        log.info(host.getIP()+" : Running "+filename+".");
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n java -cp "+filename+" com.easyhadoopmonitor.ZooKeeperMonitor & \n");//运行上传jar包
     }
 }

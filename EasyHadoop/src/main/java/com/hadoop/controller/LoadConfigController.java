@@ -62,6 +62,7 @@ public class LoadConfigController {
         files.setJDK(prop.getProperty("jdk"));
         files.setZooKeeper(prop.getProperty("zookeeper"));
         files.setHadoop(prop.getProperty("hadoop"));
+        files.setMonitor(prop.getProperty("monitor"));
         return files;
     }
     
