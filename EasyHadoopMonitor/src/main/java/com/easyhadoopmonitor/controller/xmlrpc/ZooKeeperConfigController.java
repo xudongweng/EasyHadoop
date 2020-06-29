@@ -8,8 +8,9 @@ package com.easyhadoopmonitor.controller.xmlrpc;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Map;
-import java.util.Properties;
+import java.io.OutputStream;
+import java.util.List;
+import java.util.Queue;
 import org.apache.log4j.Logger;
 
 /**
@@ -31,15 +32,17 @@ public class ZooKeeperConfigController {
             return 0;
         }
     }
-    
-    public int writeConfig(String dir,String filename,Map<String,String> propermap){
+
+    public int writeConfig(String dir,String filename,List<String> proplist){
         try {
-            Properties properties = new Properties();
-            for(Map.Entry<String, String> entry : propermap.entrySet()){
-                properties.setProperty(entry.getKey(), entry.getValue()); 
+            OutputStream os = new FileOutputStream(new File(dir,filename));
+            for(String s:proplist){
+                log.info(s);
+                os.write(s.getBytes());
+                os.write("\n".getBytes());
             }
-            FileOutputStream outputStream = new FileOutputStream(new File(dir,filename));
-            properties.store(outputStream, null);    
+            os.flush();
+            //properties.store(out, null);    
         } catch (IOException e) {
             log.error(e.toString());
             return 0;

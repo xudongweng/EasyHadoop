@@ -12,7 +12,6 @@ import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
 import java.util.List;
-import java.util.Map;
 import org.apache.log4j.Logger;
 
 /**
@@ -33,28 +32,32 @@ public class ZooKeeperGenerate {
         ZooKeeperController zkc=new ZooKeeperController();
         zkc.configZooKeeper(hostlist, files.getZooKeeper());//上传zookeeper安装文件
         
-        if(lcc.loadFile("zoo.properties")==0)return;
-        Map<String,String> zoomap=lcc.getZoo();//加载部分zookeeper配置参数
+        if(zkc.loadFile("zoo.properties")==0)return;
+        List<String> zoolist=zkc.getZoo();//加载部分zookeeper配置参数
         
         int i=0;
         SSHLinuxHelper ssh=new SSHLinuxHelper();
         for(LinuxHost host:hostlist){
             host.setHostname(ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "hostname"));//获取每台服务器主机名
             if(host.getHostname().equals("")){
-                log.error(host.getIP()+" : "+"hostname is null.");
+                log.error(host.getIP()+" : "+"The hostname is null.");
                 return;
             }
             //System.out.println(host.getHostname());
-            zoomap.put("server."+i, host.getHostname()+":2888:3888");//加载剩余zookeeper配置参数
+            zoolist.add("server."+i+"="+host.getHostname()+":2888:3888");//加载剩余zookeeper配置参数
             i++;
         }
         
         LinuxHost host=hostlist.get(0);
-        zkc.configfile(hostlist, files.getMonitor());
+        zkc.uploadMonitor(hostlist, files.getMonitor());
         
         //System.out.println(map.toString());
         RPCClientController rpcClient=new RPCClientController();
-        int s=rpcClient.invokeZooCreate("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg");
-        System.out.println(s);
+
+        if(rpcClient.invokeZooWrite("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg",zoolist)==0){
+            log.error(host.getIP()+" : "+"The zoo.cfg was configured which is failure.");
+        }
+        zkc.shutdownMonitor(hostlist);
+        log.info(host.getIP()+" : "+"The zookeeper has deployed.");
     }
 }

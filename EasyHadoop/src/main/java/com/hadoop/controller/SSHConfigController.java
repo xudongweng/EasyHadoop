@@ -38,7 +38,7 @@ public class SSHConfigController {
             }
             String hostname=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "hostname");
             if(hostname.equals("")) {
-                log.error(host.getIP()+" : "+"hostname is null.");
+                log.error(host.getIP()+" : "+"The hostname is null.");
                 return 0;
             }
             host.setHostname(hostname);
@@ -60,7 +60,7 @@ public class SSHConfigController {
         //1)对比主机名是否存在响应的ssh-keygen
         //2)存在主机名相同的情况下，ssh-keygen是否相同
         for(LinuxHost host1:hostlist){
-             log.info(host1.getHostname()+" : compose authorized_keys.");
+             log.info(host1.getHostname()+" : The compose authorized_keys.");
              for(LinuxHost host2:hostlist){
                  if(!host1.getIP().equals(host2.getIP())){
                      Iterator iter = host2.getKeys().entrySet().iterator();

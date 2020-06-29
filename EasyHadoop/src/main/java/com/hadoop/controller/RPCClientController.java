@@ -7,7 +7,7 @@ package com.hadoop.controller;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Map;
+import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.xmlrpc.XmlRpcException;
 import org.apache.xmlrpc.client.XmlRpcClient;
@@ -45,7 +45,7 @@ public class RPCClientController {
         //System.out.println("=>Hello.sayHello方法调用返回结果: " + result);
     }
     
-    public int invokeZooWrite(String url,String dir,String filename,Map<String,String> propermap){
+    public int invokeZooWrite(String url,String dir,String filename,List<String> proplist){
         int result =0;
         // XmlRpcClient
         XmlRpcClient client = new XmlRpcClient();
@@ -63,7 +63,7 @@ public class RPCClientController {
         client.setConfig(config);
         // 远程调用
         try {
-            result = (int) client.execute("ZooKeeper.writeCfg", new Object[] { dir,filename,propermap });
+            result = (int) client.execute("ZooKeeper.writeCfg", new Object[] { dir,filename,proplist });
         } catch (XmlRpcException e) {
             log.error(e.toString());
         }

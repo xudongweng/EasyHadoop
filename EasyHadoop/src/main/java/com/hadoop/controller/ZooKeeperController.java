@@ -8,7 +8,12 @@ package com.hadoop.controller;
 import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.LinuxHost;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.List;
+import java.util.Properties;
 import org.apache.log4j.Logger;
 
 /**
@@ -18,6 +23,35 @@ import org.apache.log4j.Logger;
 public class ZooKeeperController {
     private Logger log=Logger.getLogger(ZooKeeperController.class);
     private SSHLinuxHelper ssh=new SSHLinuxHelper();
+    private final Properties prop = new Properties();
+    
+    public int loadFile(String cfgfile){
+        File file = new File(cfgfile);
+        if(!file.exists()){
+            log.error("File "+file.getAbsolutePath()+cfgfile+" is not exist.");
+            return 0;
+        }
+        //加载配置
+        try{
+            prop.load(new FileInputStream(cfgfile));
+        }catch(IOException e){
+            log.error(e.toString());
+            return 0;
+        }
+        return 1;
+    }
+    
+    public List<String> getZoo(){
+        Enumeration<Object> keys = prop.keys();
+        List<String> l=new ArrayList<>();
+        while (keys.hasMoreElements()) {
+            String key = (String) keys.nextElement();
+            //System.out.println(key + "=" + prop.getProperty(key));
+            l.add(key+"="+prop.getProperty(key));
+        }
+        return l;
+    }
+    
     public void configZooKeeper(List<LinuxHost> hostlist,String filepath){
         
         LinuxHost host=hostlist.get(0);
@@ -38,7 +72,7 @@ public class ZooKeeperController {
         }
     }
     
-    public void configfile(List<LinuxHost> hostlist,String monitorpath){
+    public void uploadMonitor(List<LinuxHost> hostlist,String monitorpath){
         LinuxHost host=hostlist.get(0);
         String dst="/tmp";
         String filename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
@@ -46,5 +80,13 @@ public class ZooKeeperController {
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
         log.info(host.getIP()+" : Running "+filename+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n nohup java -cp "+filename+" com.easyhadoopmonitor.ZooKeeperMonitor >/dev/null 2>&1 &");//运行上传jar包
+    }
+    
+    public void shutdownMonitor(List<LinuxHost> hostlist){
+        LinuxHost host=hostlist.get(0);
+        log.info(host.getIP()+" : Shutdown monitor.");
+        String monitorPid=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps |grep ZooKeeperMonitor| awk '{print $1}'");
+        System.out.println(monitorPid);
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"kill -9 "+monitorPid);
     }
 }
