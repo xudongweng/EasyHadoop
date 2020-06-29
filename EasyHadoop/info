@@ -627,3 +627,19 @@ INFO:192.168.3.70 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies
 INFO:192.168.3.70 : Shutdown monitor.
 2020-06-29 15:31:51 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:61) ]
 INFO:192.168.3.70 : The zookeeper has deployed.
+2020-06-29 16:19:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:61) ]
+INFO:192.168.3.70 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.70.
+2020-06-29 16:19:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:63) ]
+INFO:192.168.3.70 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-06-29 16:19:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:66) ]
+INFO:192.168.3.70 : clear /tmp.
+2020-06-29 16:19:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:68) ]
+INFO:192.168.3.70 : set environment of .bashrc.
+2020-06-29 16:19:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:79) ]
+INFO:192.168.3.70 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.70.
+2020-06-29 16:19:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:81) ]
+INFO:192.168.3.70 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-06-29 16:19:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:87) ]
+INFO:192.168.3.70 : Shutdown monitor.
+2020-06-29 16:19:53 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:61) ]
+INFO:192.168.3.70 : The zookeeper has deployed.

@@ -24,7 +24,7 @@ public class ZooKeeperController {
     private Logger log=Logger.getLogger(ZooKeeperController.class);
     private SSHLinuxHelper ssh=new SSHLinuxHelper();
     private final Properties prop = new Properties();
-    
+    private String jarfilename="";
     public int loadFile(String cfgfile){
         File file = new File(cfgfile);
         if(!file.exists()){
@@ -75,18 +75,23 @@ public class ZooKeeperController {
     public void uploadMonitor(List<LinuxHost> hostlist,String monitorpath){
         LinuxHost host=hostlist.get(0);
         String dst="/tmp";
-        String filename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
+        this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
         log.info(host.getIP()+" : Upload "+monitorpath+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
-        log.info(host.getIP()+" : Running "+filename+".");
-        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n nohup java -cp "+filename+" com.easyhadoopmonitor.ZooKeeperMonitor >/dev/null 2>&1 &");//运行上传jar包
+        log.info(host.getIP()+" : Running "+this.jarfilename+".");
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n nohup java -cp "+jarfilename+" com.easyhadoopmonitor.ZooKeeperMonitor >/dev/null 2>&1 &");//运行上传jar包
     }
     
     public void shutdownMonitor(List<LinuxHost> hostlist){
         LinuxHost host=hostlist.get(0);
-        log.info(host.getIP()+" : Shutdown monitor.");
-        String monitorPid=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps |grep ZooKeeperMonitor| awk '{print $1}'");
-        System.out.println(monitorPid);
-        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"kill -9 "+monitorPid);
+        log.info(host.getIP()+" : Find ZooKeeperMonitor Pid.");
+        String wc=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps|grep ZooKeeperMonitor|wc -l");
+        if(!wc.equals("0"))
+        {
+            log.info(host.getIP()+" : Shutdown monitor.");
+            String monitorPid=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps |grep ZooKeeperMonitor| awk '{print $1}'");
+            System.out.println(monitorPid);
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"kill -9 "+monitorPid);
+        }
     }
 }

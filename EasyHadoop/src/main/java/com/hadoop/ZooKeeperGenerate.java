@@ -49,15 +49,16 @@ public class ZooKeeperGenerate {
         }
         
         LinuxHost host=hostlist.get(0);
-        zkc.uploadMonitor(hostlist, files.getMonitor());
+        zkc.shutdownMonitor(hostlist);//确保之前没有jar的线程，如果有则删除。
+        zkc.uploadMonitor(hostlist, files.getMonitor());//上传ZooKeeperMonitor的jar
         
         //System.out.println(map.toString());
         RPCClientController rpcClient=new RPCClientController();
-
+        //执行zookeeper配置文件的写入
         if(rpcClient.invokeZooWrite("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg",zoolist)==0){
             log.error(host.getIP()+" : "+"The zoo.cfg was configured which is failure.");
         }
-        zkc.shutdownMonitor(hostlist);
+        zkc.shutdownMonitor(hostlist);//关闭ZooKeeperMonitor的jar线程
         log.info(host.getIP()+" : "+"The zookeeper has deployed.");
     }
 }
