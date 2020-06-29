@@ -25,6 +25,7 @@ public class ZooKeeperController {
     private SSHLinuxHelper ssh=new SSHLinuxHelper();
     private final Properties prop = new Properties();
     private String jarfilename="";
+    private String dst="/tmp";
     public int loadFile(String cfgfile){
         File file = new File(cfgfile);
         if(!file.exists()){
@@ -55,7 +56,6 @@ public class ZooKeeperController {
     public void configZooKeeper(List<LinuxHost> hostlist,String filepath){
         
         LinuxHost host=hostlist.get(0);
-        String dst="/tmp";
         //String filepath=files.getZooKeeper();
         String filename=filepath.substring(filepath.lastIndexOf(File.separator)+1,filepath.length());
         log.info(host.getIP()+" : Upload "+filepath+" to "+host.getIP()+".");
@@ -74,7 +74,6 @@ public class ZooKeeperController {
     
     public void uploadMonitor(List<LinuxHost> hostlist,String monitorpath){
         LinuxHost host=hostlist.get(0);
-        String dst="/tmp";
         this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
         log.info(host.getIP()+" : Upload "+monitorpath+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
@@ -92,6 +91,9 @@ public class ZooKeeperController {
             String monitorPid=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps |grep ZooKeeperMonitor| awk '{print $1}'");
             System.out.println(monitorPid);
             ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"kill -9 "+monitorPid);
+            
         }
+        log.info(host.getIP()+" : Clear "+dst+".");
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"rm -rf "+dst+"/*.jar");
     }
 }

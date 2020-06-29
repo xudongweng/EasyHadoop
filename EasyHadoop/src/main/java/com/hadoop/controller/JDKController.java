@@ -28,7 +28,7 @@ public class JDKController {
         log.info(host.getIP()+" : Uncompress "+filename+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n tar zxf "+filename);//解压jdk
         String jdkfile=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "ls "+dst+" |grep jdk |grep -v gz ");
-        log.info(host.getIP()+" : clear "+dst+".");
+        log.info(host.getIP()+" : Clear "+dst+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "rm -rf /usr/local/jdk \n mv "+dst+"/"+jdkfile +" /usr/local/jdk \n rm -rf "+dst+"/*.gz");//移动解压后的jdk，删除上传文件
         log.info(host.getIP()+" : set environment of .bashrc.");
         if(!ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"cd ~ \n cat .bashrc").contains("JAVA_HOME"))//如果不包含JAVA_HOME
