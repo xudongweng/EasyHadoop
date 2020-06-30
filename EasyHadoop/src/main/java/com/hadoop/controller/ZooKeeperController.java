@@ -21,11 +21,11 @@ import org.apache.log4j.Logger;
  * @author sheriff
  */
 public class ZooKeeperController {
-    private Logger log=Logger.getLogger(ZooKeeperController.class);
-    private SSHLinuxHelper ssh=new SSHLinuxHelper();
+    private final Logger log=Logger.getLogger(ZooKeeperController.class);
+    private final SSHLinuxHelper ssh=new SSHLinuxHelper();
     private final Properties prop = new Properties();
     private String jarfilename="";
-    private String dst="/tmp";
+    private final String dst="/tmp";
     public int loadFile(String cfgfile){
         File file = new File(cfgfile);
         if(!file.exists()){
@@ -54,7 +54,6 @@ public class ZooKeeperController {
     }
     
     public void configZooKeeper(List<LinuxHost> hostlist,String filepath){
-        
         LinuxHost host=hostlist.get(0);
         //String filepath=files.getZooKeeper();
         String filename=filepath.substring(filepath.lastIndexOf(File.separator)+1,filepath.length());
@@ -89,9 +88,8 @@ public class ZooKeeperController {
         {
             log.info(host.getIP()+" : Shutdown monitor.");
             String monitorPid=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps |grep ZooKeeperMonitor| awk '{print $1}'");
-            System.out.println(monitorPid);
+            //System.out.println(monitorPid);
             ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"kill -9 "+monitorPid);
-            
         }
         log.info(host.getIP()+" : Clear "+dst+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"rm -rf "+dst+"/*.jar");

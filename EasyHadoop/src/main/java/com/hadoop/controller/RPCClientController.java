@@ -18,7 +18,7 @@ import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
  * @author sheriff
  */
 public class RPCClientController {
-    private Logger log=Logger.getLogger(RPCClientController.class);
+    private final Logger log=Logger.getLogger(RPCClientController.class);
     public int invokeZooCreate(String url,String dir,String filename){
         int result = 0;
         // XmlRpcClient

@@ -16,8 +16,8 @@ import org.apache.log4j.Logger;
  * @author sheriff
  */
 public class JDKController {
-    private Logger log=Logger.getLogger(JDKController.class);
-    private SSHLinuxHelper ssh=new SSHLinuxHelper();
+    private final Logger log=Logger.getLogger(JDKController.class);
+    private final SSHLinuxHelper ssh=new SSHLinuxHelper();
     public void configJDK(List<LinuxHost> hostlist,String filepath){
         
         LinuxHost host=hostlist.get(0);

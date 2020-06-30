@@ -26,11 +26,8 @@ import org.apache.log4j.Logger;
 public class SSHLinuxHelper {
     private JSch jsch;
     private Session session;
-    private Logger log=null;
-    
-    public SSHLinuxHelper(){
-        this.log=Logger.getLogger(SSHLinuxHelper.class);
-    }
+    private final Logger log=Logger.getLogger(SSHLinuxHelper.class);
+   
     
     public String execCmd(String host,String user,String password,String command){
         StringBuilder sb=new StringBuilder();
@@ -52,11 +49,11 @@ public class SSHLinuxHelper {
             ((ChannelExec) channel).setErrStream(System.err);
             
             channel.connect();
-            BufferedReader reader = null;
+            BufferedReader reader;
             try{
                 InputStream in = channel.getInputStream();
                 reader = new BufferedReader(new InputStreamReader(in));
-                String buf = null;
+                String buf;
                 while ((buf = reader.readLine()) != null) {
                     //System.out.println(buf);
                     sb.append(buf);

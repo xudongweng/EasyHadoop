@@ -17,8 +17,8 @@ import org.apache.log4j.Logger;
  * @author sheriff
  */
 public class SSHConfigController {
-    private Logger log=Logger.getLogger(SSHConfigController.class);
-    private SSHLinuxHelper ssh=new SSHLinuxHelper();
+    private final Logger log=Logger.getLogger(SSHConfigController.class);
+    private final SSHLinuxHelper ssh=new SSHLinuxHelper();
     public int configSSH(List<LinuxHost> hostlist){
         for(LinuxHost host:hostlist){
             //验证ssh-keygen
