@@ -6,10 +6,13 @@
 package com.easyhadoopmonitor.controller.xmlrpc;
 
 import com.easyhadoopmonitor.helper.LinuxRunTimeHelper;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.util.List;
 import org.apache.log4j.Logger;
 
@@ -35,25 +38,43 @@ public class ZooKeeperConfigController {
     }
 
     public int writeConfig(String dir,String filename,List<String> proplist){
+        String hostname=runtime.exec("hostname");
+        String zoonum="0";
+        String datadir="";
         try {
             OutputStream os = new FileOutputStream(new File(dir,filename));
             for(String s:proplist){
                 log.info(s);
                 os.write(s.getBytes());
                 os.write("\n".getBytes());
-                if(s.contains("dataDir="))this.mkdir(s);
+                if(s.contains("dataDir=")){
+                    datadir=s.substring(8);
+                    log.info("Create directory "+s+" "+runtime.exec("mkdir -p "+datadir));
+                }else if(s.contains(hostname)){
+                    zoonum=s.substring(7,8);
+                }
             }
             os.flush();
-            //properties.store(out, null);    
+            this.writeMyid(zoonum, datadir);
         } catch (IOException e) {
             log.error(e.toString());
             return 0;
         }
         return 1;
     }
-    
-    private void mkdir(String dirParam){
-        String sysinfo=runtime.exec("mkdir -p "+dirParam.substring(8));
-        log.info("Create directory "+dirParam+" "+sysinfo);
+
+    private void writeMyid(String zoonum,String datadir){
+        try{
+            File myidfile = new File(datadir+File.separator+"myid");
+            if(!myidfile.isFile()){
+                myidfile.createNewFile();
+            }
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(myidfile),"utf-8"));
+            bw.write(zoonum);
+            bw.close();
+        }catch(IOException e){
+            log.error(e.toString());
+        }
+        
     }
 }

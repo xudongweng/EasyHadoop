@@ -24,7 +24,7 @@ public class ZooKeeperController {
     private final Logger log=Logger.getLogger(ZooKeeperController.class);
     private final SSHLinuxHelper ssh=new SSHLinuxHelper();
     private final Properties prop = new Properties();
-    private String jarfilename="";
+    private String jarfilename;
     private final String dst="/tmp";
     public int loadFile(String cfgfile){
         File file = new File(cfgfile);
@@ -50,6 +50,7 @@ public class ZooKeeperController {
             //System.out.println(key + "=" + prop.getProperty(key));
             l.add(key+"="+prop.getProperty(key));
         }
+        prop.clear();
         return l;
     }
     

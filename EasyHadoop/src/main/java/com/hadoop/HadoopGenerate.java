@@ -5,6 +5,12 @@
  */
 package com.hadoop;
 
+import com.hadoop.controller.LoadConfigController;
+import com.hadoop.model.InstallFiles;
+import com.hadoop.model.LinuxHost;
+import java.util.List;
+import org.apache.log4j.Logger;
+
 
 
 /**
@@ -13,6 +19,12 @@ package com.hadoop;
  */
 public class HadoopGenerate {
     public static void main(String[] args){
+        Logger log=Logger.getLogger(HadoopGenerate.class);
+        LoadConfigController lcc=new LoadConfigController();
+        if(lcc.loadFile("config.properties")==0)return;
         
+        InstallFiles files=lcc.getInstallFiles();
+
+        List<LinuxHost> hostlist=lcc.getcfgHosts();
     }
 }

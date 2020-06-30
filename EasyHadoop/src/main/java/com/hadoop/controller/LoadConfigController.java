@@ -63,5 +63,7 @@ public class LoadConfigController {
         return files;
     }
     
-    
+    public void close(){
+        prop.clear();
+    }
 }

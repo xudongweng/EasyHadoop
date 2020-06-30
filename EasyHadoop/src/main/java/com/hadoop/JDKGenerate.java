@@ -21,6 +21,7 @@ public class JDKGenerate {
         if(lcc.loadFile("config.properties")==0)return;
         List<LinuxHost> hostlist=lcc.getcfgHosts();
         InstallFiles files=lcc.getInstallFiles();
+        lcc.close();
         JDKController jc=new JDKController();
         jc.configJDK(hostlist,files.getJDK());//上传jdk安装文件
     }
