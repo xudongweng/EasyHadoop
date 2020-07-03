@@ -18,9 +18,8 @@ import org.apache.log4j.Logger;
 public class JDKController {
     private final Logger log=Logger.getLogger(JDKController.class);
     private final SSHLinuxHelper ssh=new SSHLinuxHelper();
-    public void configJDK(List<LinuxHost> hostlist,String filepath){
+    public void configJDK(LinuxHost host,String filepath){
         
-        LinuxHost host=hostlist.get(0);
         String dst="/tmp";
         String filename=filepath.substring(filepath.lastIndexOf(File.separator)+1,filepath.length());
         log.info(host.getIP()+" : Upload "+filepath+" to "+host.getIP()+".");

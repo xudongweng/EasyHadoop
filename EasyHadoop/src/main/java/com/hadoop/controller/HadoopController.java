@@ -6,6 +6,7 @@
 package com.hadoop.controller;
 
 import com.hadoop.helper.SSHLinuxHelper;
+import com.hadoop.model.LinuxHost;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -38,6 +39,11 @@ public class HadoopController {
         }
         return 1;
     }
+    
+    public void configHadoop(List<LinuxHost> hostlist,String dir){
+    
+    }
+    
     
     public List<String> getHadoop(){
         prop.clear();

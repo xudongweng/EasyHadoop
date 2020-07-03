@@ -54,12 +54,12 @@ public class ZooKeeperController {
         return l;
     }
     
-    public void configZooKeeper(List<LinuxHost> hostlist,String filepath){
+    public void configZooKeeper(List<LinuxHost> hostlist,String dir){
         LinuxHost host=hostlist.get(0);
         //String filepath=files.getZooKeeper();
-        String filename=filepath.substring(filepath.lastIndexOf(File.separator)+1,filepath.length());
-        log.info(host.getIP()+" : Upload "+filepath+" to "+host.getIP()+".");
-        ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), filepath, dst);//上传zookeeper
+        String filename=dir.substring(dir.lastIndexOf(File.separator)+1,dir.length());
+        log.info(host.getIP()+" : Upload "+dir+" to "+host.getIP()+".");
+        ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), dir, dst);//上传zookeeper
         log.info(host.getIP()+" : Uncompress "+filename+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n tar zxf "+filename);//解压zookeeper
         String zoofile=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "ls "+dst+" |grep zookeeper |grep -v gz ");

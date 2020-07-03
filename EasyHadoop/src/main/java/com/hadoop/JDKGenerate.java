@@ -23,6 +23,6 @@ public class JDKGenerate {
         InstallFiles files=lcc.getInstallFiles();
         lcc.close();
         JDKController jc=new JDKController();
-        jc.configJDK(hostlist,files.getJDK());//上传jdk安装文件
+        jc.configJDK(hostlist.get(0),files.getJDK());//上传jdk安装文件
     }
 }
