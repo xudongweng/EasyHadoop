@@ -23,7 +23,7 @@ public class LinuxRunTimeHelper {
         Process pro = null;
         Runtime runTime = Runtime.getRuntime();
         if (runTime == null) {
-            log.error("Create runtime false!");
+            log.error("Create runtime failed.");
         }
         try {
             pro = runTime.exec(command);
