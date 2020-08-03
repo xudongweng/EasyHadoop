@@ -60,12 +60,12 @@ public class SSHLinuxHelper {
                 }
                 reader.close();
             }catch(IOException e){
-                log.error(e.toString());
+                log.error(e.toString()+" [host]:"+host+",[user]:"+user+",[password]:"+password+",[command]:"+command);
             }
             channel.disconnect();
             session.disconnect();
         } catch (JSchException e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [host]:"+host+",[user]:"+user+",[password]:"+password+",[command]:"+command);
         }
         return sb.toString();
     }
@@ -104,7 +104,7 @@ public class SSHLinuxHelper {
                 reader.close();
                 
             }catch(IOException e){
-                log.error(e.toString());
+                log.error(e.toString()+" [host]:"+host+",[user]:"+user+",[password]:"+password+",[port]"+port+",[command]:"+command);
             }
             channel.disconnect();
             session.disconnect();
@@ -139,12 +139,12 @@ public class SSHLinuxHelper {
                     }
                 }
             } catch (SftpException e) {
-                log.error(e.toString());
+                log.error(e.toString()+" [host]:"+host+",[user]:"+user+",[password]:"+password+",[path]"+path);
             }
             channelSftp.disconnect();
             session.disconnect();
         }catch (JSchException e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [host]:"+host+",[user]:"+user+",[password]:"+password+",[path]"+path);
         }
     }
     
@@ -166,7 +166,7 @@ public class SSHLinuxHelper {
                 //4、进行文件传输操作：put()、get()....
                 channelSftp.put(sFile, dst);
             } catch (SftpException e) {
-                System.out.println(e.toString());
+                log.error(e.toString()+" [host]:"+host+",[user]:"+user+",[password]:"+password+",[sFile]"+sFile+",[dst]"+dst);
             }
             //5、操作完毕后，关闭通道并退出本次会话
             if(channelSftp!=null && channelSftp.isConnected()){
@@ -176,7 +176,7 @@ public class SSHLinuxHelper {
                 session.disconnect();
             }
         }catch (JSchException e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [host]:"+host+",[user]:"+user+",[password]:"+password+",[sFile]"+sFile+",[dst]"+dst);
         }
     }
 }

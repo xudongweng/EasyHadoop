@@ -57,7 +57,7 @@ public class UnTarGzHelper {
                             subEntryFile = new File(entryFileName + File.separator + subEntries[i].getName());
                             IOUtils.copy(taris, out);
                         } catch (Exception e) {
-                            log.error(e.toString());
+                            log.error(e.toString()+" [tarGzFile]:"+tarGzFile+",[destDir]:"+destDir);
                         }
                     }
                 } 
@@ -75,7 +75,7 @@ public class UnTarGzHelper {
             //如果需要刪除之前解压的gz文件，在这里进行
  
         } catch (Exception e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [tarGzFile]:"+tarGzFile+",[destDir]:"+destDir);
         }
     }
  
@@ -93,7 +93,7 @@ public class UnTarGzHelper {
             try {
                 file.createNewFile();
             } catch (IOException e) {
-                log.error(e.toString());
+                log.error(e.toString()+" [file]:"+file.getPath());
             }
         }
     }

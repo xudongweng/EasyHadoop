@@ -30,7 +30,7 @@ public class RPCClientController {
             config.setServerURL(new URL(url));	//此10080端口正好被内嵌webServer监听；
             //config.setServerURL(new URL("http://localhost:10080"));
         } catch (MalformedURLException e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [url]:"+url+",[dir]:"+dir+",[filename]:"+filename);
             return result;
         }
         // 客户端设置
@@ -39,7 +39,7 @@ public class RPCClientController {
         try {
             result = (int) client.execute("ZooKeeper.createCfg", new Object[] { dir,filename });
         } catch (XmlRpcException e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [url]:"+url+",[dir]:"+dir+",[filename]:"+filename);
         }
         return result;
         //System.out.println("=>Hello.sayHello方法调用返回结果: " + result);
@@ -56,7 +56,7 @@ public class RPCClientController {
             config.setServerURL(new URL(url));	//此10080端口正好被内嵌webServer监听；
             //config.setServerURL(new URL("http://localhost:10080"));
         } catch (MalformedURLException e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [url]:"+url+",[dir]:"+dir+",[filename]:"+filename+",[proplist]:"+proplist.toString());
             return result;
         }
         // 客户端设置
@@ -65,7 +65,7 @@ public class RPCClientController {
         try {
             result = (int) client.execute("ZooKeeper.writeCfg", new Object[] { dir,filename,proplist });
         } catch (XmlRpcException e) {
-            log.error(e.toString());
+            log.error(e.toString()+" [url]:"+url+",[dir]:"+dir+",[filename]:"+filename+",[proplist]:"+proplist.toString());
         }
         return result;
         //System.out.println("=>Hello.sayHello方法调用返回结果: " + result);

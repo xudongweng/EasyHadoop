@@ -34,7 +34,7 @@ public class HadoopController {
         try{
             prop.load(new FileInputStream(cfgfile));
         }catch(IOException e){
-            log.error(e.toString());
+            log.error(e.toString()+" [cfgfile]："+cfgfile);
             return 0;
         }
         return 1;
