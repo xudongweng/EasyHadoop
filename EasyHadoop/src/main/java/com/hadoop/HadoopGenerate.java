@@ -5,6 +5,7 @@
  */
 package com.hadoop;
 
+import com.hadoop.controller.HadoopController;
 import com.hadoop.controller.LoadConfigController;
 import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
@@ -26,5 +27,19 @@ public class HadoopGenerate {
         InstallFiles files=lcc.getInstallFiles();
 
         List<LinuxHost> hostlist=lcc.getcfgHosts();
+        
+        HadoopController hc=new HadoopController();
+
+        hc.configHadoop(hostlist, files.getHadoop());
+        
+        if(hc.loadFile("core.properties")==0)return;
+        List<String> corelist=hc.getCfg();
+        if(hc.loadFile("hdfs.properties")==0)return;
+        List<String> hdfslist=hc.getCfg();
+        if(hc.loadFile("mapred.properties")==0)return;
+        List<String> mapredlist=hc.getCfg();
+        if(hc.loadFile("yarn.properties")==0)return;
+        List<String> yarnlist=hc.getCfg();
+
     }
 }

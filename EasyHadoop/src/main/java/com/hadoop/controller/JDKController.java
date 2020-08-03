@@ -31,7 +31,12 @@ public class JDKController {
         log.info(host.getIP()+" : set environment of .bashrc.");
         if(!ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"cd ~ \n cat .bashrc").contains("JAVA_HOME"))//如果不包含JAVA_HOME
         {
-            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd ~ \n echo \"JAVA_HOME=/usr/local/jdk export JAVA_HOME \" >> .bashrc \n echo \"PATH=\\$PATH:\\$JAVA_HOME/bin export PATH\" >> .bashrc \n source .bashrc");
+            log.info(host.getIP()+" : set JAVA_HOME.");
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd ~ \n echo \"JAVA_HOME=/usr/local/jdk export JAVA_HOME \" >> .bashrc");
+            log.info(host.getIP()+" : set CLASSPATH.");
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd ~ \n echo \"CLASSPATH=.:\\$JAVA_HOME/jre/lib/rt.jar:\\$JAVA_HOME/lib/dt.jar:\\$JAVA_HOME/lib/tools.jar export CLASSPATH \" >> .bashrc");
+            log.info(host.getIP()+" : set PATH.");
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd ~ \n echo \"PATH=\\$PATH:\\$JAVA_HOME/bin export PATH\" >> .bashrc \n source .bashrc");
         }
         log.info(host.getIP()+" : JDK has deployed.");
     }

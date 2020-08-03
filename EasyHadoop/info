@@ -1,0 +1,202 @@
+2020-08-03 15:34:09 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.71 : .ssh/authorized_keys is not exist.
+2020-08-03 15:34:09 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.71 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-03 15:34:10 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.72 : .ssh/authorized_keys is not exist.
+2020-08-03 15:34:10 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.72 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-03 15:34:11 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.73 : .ssh/authorized_keys is not exist.
+2020-08-03 15:34:12 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.73 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-03 15:34:13 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7a : The compose authorized_keys.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7a : c7a and c7b generate new authorized_keys.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7a : c7a and c7c generate new authorized_keys.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7a :c7a key has deployed.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7b : The compose authorized_keys.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7b : c7b and c7a generate new authorized_keys.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7b : c7b and c7c generate new authorized_keys.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7b :c7b key has deployed.
+2020-08-03 15:34:14 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7c : The compose authorized_keys.
+2020-08-03 15:34:15 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7c : c7c and c7a generate new authorized_keys.
+2020-08-03 15:34:15 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7c : c7c and c7b generate new authorized_keys.
+2020-08-03 15:34:15 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7c :c7c key has deployed.
+2020-08-03 15:34:52 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.71 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.71.
+2020-08-03 15:34:57 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.71 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-03 15:35:05 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 15:35:05 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-03 15:35:06 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:36) ]
+INFO:192.168.3.71 : JDK has deployed.
+2020-08-03 15:35:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:61) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-03 15:35:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:63) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-03 15:35:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:66) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-03 15:35:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:68) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-03 15:35:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-03 15:35:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 15:35:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-03 15:35:47 下午 [Thread: main][ Method: com.hadoop.helper.SSHLinuxHelper.uploadfile(SSHLinuxHelper.java:169) ]
+ERROR:4: java.io.FileNotFoundException: D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar (系统找不到指定的路径。) [host]:192.168.3.71,[user]:root,[password]:123456,[sFile]D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar,[dst]/tmp
+2020-08-03 15:35:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-03 15:35:50 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:68) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect [url]:http://192.168.3.71:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-03 15:35:50 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:59) ]
+ERROR:192.168.3.71 : The zoo.cfg was configured which is failure.
+2020-08-03 15:35:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-03 15:35:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 15:35:51 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:62) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-03 15:38:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:61) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-03 15:38:13 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:63) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-03 15:38:14 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:66) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-03 15:38:14 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:68) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-03 15:38:15 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-03 15:38:15 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 15:38:15 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-03 15:38:16 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-03 15:38:17 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-03 15:38:17 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-03 15:38:18 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 15:38:18 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:62) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-03 15:44:03 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:46) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-03 15:44:09 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:48) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-03 15:58:51 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:48) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-03 15:58:55 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:50) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-03 15:59:33 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:48) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-03 15:59:37 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:50) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-03 16:23:55 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.71 : .ssh/authorized_keys is not exist.
+2020-08-03 16:23:55 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.71 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-03 16:23:56 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.72 : .ssh/authorized_keys is not exist.
+2020-08-03 16:23:56 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.72 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-03 16:23:57 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.73 : .ssh/authorized_keys is not exist.
+2020-08-03 16:23:58 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.73 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-03 16:23:59 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7a : The compose authorized_keys.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7a : c7a and c7b generate new authorized_keys.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7a : c7a and c7c generate new authorized_keys.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7a :c7a key has deployed.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7b : The compose authorized_keys.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7b : c7b and c7a generate new authorized_keys.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7b : c7b and c7c generate new authorized_keys.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7b :c7b key has deployed.
+2020-08-03 16:24:00 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7c : The compose authorized_keys.
+2020-08-03 16:24:01 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7c : c7c and c7a generate new authorized_keys.
+2020-08-03 16:24:01 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7c : c7c and c7b generate new authorized_keys.
+2020-08-03 16:24:01 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7c :c7c key has deployed.
+2020-08-03 16:24:51 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.71 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.71.
+2020-08-03 16:24:55 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.71 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-03 16:25:03 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 16:25:03 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-03 16:25:03 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:34) ]
+INFO:192.168.3.71 : set JAVA_HOME.
+2020-08-03 16:25:03 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:36) ]
+INFO:192.168.3.71 : set CLASSPATH.
+2020-08-03 16:25:04 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:38) ]
+INFO:192.168.3.71 : set PATH.
+2020-08-03 16:25:04 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:41) ]
+INFO:192.168.3.71 : JDK has deployed.
+2020-08-03 16:26:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:61) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-03 16:26:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:63) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-03 16:26:09 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:66) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-03 16:26:09 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:68) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-03 16:26:10 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-03 16:26:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 16:26:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-03 16:26:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-03 16:26:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-03 16:26:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-03 16:26:13 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-03 16:26:13 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:62) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-03 16:29:07 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:48) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-03 16:29:14 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:50) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-03 16:29:24 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:54) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-03 16:29:24 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:56) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-03 16:35:38 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:48) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-03 16:35:44 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:50) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-03 16:35:53 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:54) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-03 16:35:54 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:56) ]
+INFO:192.168.3.71 : set environment of .bashrc.
