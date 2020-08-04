@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.easyhadoopmonitor.controller.xmlrpc;
+package com.easyhadoopmonitor.controller.zoo;
 
 import java.util.List;
 

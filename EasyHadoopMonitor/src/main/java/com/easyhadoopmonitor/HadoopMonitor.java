@@ -5,7 +5,7 @@
  */
 package com.easyhadoopmonitor;
 
-import com.easyhadoopmonitor.controller.xmlrpc.RPCHadoopController;
+import com.easyhadoopmonitor.controller.hadoop.RPCHadoopController;
 
 /**
  *

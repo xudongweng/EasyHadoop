@@ -5,7 +5,7 @@
  */
 package com.easyhadoopmonitor;
 
-import com.easyhadoopmonitor.controller.xmlrpc.RPCZooKeeperController;
+import com.easyhadoopmonitor.controller.zoo.RPCZooKeeperController;
 
 /**
  *

@@ -20,7 +20,7 @@ import org.apache.xmlrpc.client.XmlRpcClientConfigImpl;
 public class RPCClientController {
     private final Logger log=Logger.getLogger(RPCClientController.class);
 
-    public int invokeWrite(String url,String dir,String filename,List<String> proplist,String component){
+    public int invokeWrite(String url,String dir,String filename,List<String> proplist,String component,String invokeMethod){
         int result =0;
         // XmlRpcClient
         XmlRpcClient client = new XmlRpcClient();
@@ -38,9 +38,9 @@ public class RPCClientController {
         client.setConfig(config);
         // 远程调用
         try {
-            result = (int) client.execute(component+".writeCfg", new Object[] { dir,filename,proplist });
+            result = (int) client.execute(component+"."+invokeMethod, new Object[] { dir,filename,proplist });
         } catch (XmlRpcException e) {
-            log.error(e.toString()+" [url]:"+url+",[dir]:"+dir+",[filename]:"+filename+",[proplist]:"+proplist.toString());
+            log.error(e.toString()+" [url]:"+url+",[dir]:"+dir+",[filename]:"+filename+",[proplist]:"+proplist.toString()+",[component]:"+component+",[method]:"+invokeMethod);
         }
         return result;
         //System.out.println("=>Hello.sayHello方法调用返回结果: " + result);
