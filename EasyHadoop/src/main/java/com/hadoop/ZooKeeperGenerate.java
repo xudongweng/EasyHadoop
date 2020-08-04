@@ -55,7 +55,7 @@ public class ZooKeeperGenerate {
         //System.out.println(map.toString());
         RPCClientController rpcClient=new RPCClientController();
         //执行zookeeper配置文件的写入
-        if(rpcClient.invokeZooWrite("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg",zoolist)==0){
+        if(rpcClient.invokeWrite("http://"+host.getIP()+":10080","/usr/local/zookeeper/conf","zoo.cfg",zoolist,"ZooKeeper")==0){//调用名为zookeeper的RPC
             log.error(host.getIP()+" : "+"The zoo.cfg was configured which is failure.");
         }
         zkc.shutdownMonitor(hostlist);//关闭ZooKeeperMonitor的jar线程

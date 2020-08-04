@@ -15,9 +15,6 @@ import java.util.List;
 public class XmlRpcZooKeeperHandler {
     
     private final ZooKeeperConfigController zcc=new ZooKeeperConfigController();
-    public int createCfg(String dir,String filename){
-        return zcc.createConfig(dir, filename);
-    }
     
     public int writeCfg(String dir,String filename,List<String> proplist){
         return zcc.writeConfig(dir, filename,proplist);

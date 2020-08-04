@@ -40,6 +40,11 @@ public class HadoopGenerate {
         List<String> mapredlist=hc.getCfg();
         if(hc.loadFile("yarn.properties")==0)return;
         List<String> yarnlist=hc.getCfg();
-
+        //System.out.println(corelist);
+        //System.out.println(hdfslist);
+        //System.out.println(mapredlist);
+        //System.out.println(yarnlist);
+        
+hc.uploadMonitor(hostlist, files.getMonitor());//上传ZooKeeperMonitor的jar
     }
 }
