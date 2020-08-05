@@ -97,4 +97,19 @@ public class HadoopController {
         log.info(host.getIP()+" : Running "+this.jarfilename+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n nohup java -cp "+jarfilename+" com.easyhadoopmonitor.HadoopMonitor >/dev/null 2>&1 &");//运行上传jar包
     }
+    
+    public void shutdownMonitor(List<LinuxHost> hostlist){
+        LinuxHost host=hostlist.get(0);
+        log.info(host.getIP()+" : Find HadoopMonitor Pid.");
+        String wc=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps|grep HadoopMonitor|wc -l");
+        if(!wc.equals("0"))
+        {
+            log.info(host.getIP()+" : Shutdown monitor.");
+            String monitorPid=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps |grep HadoopMonitor| awk '{print $1}'");
+            //System.out.println(monitorPid);
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"kill -9 "+monitorPid);
+        }
+        log.info(host.getIP()+" : Clear "+dst+".");
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"rm -rf "+dst+"/*.jar");
+    }
 }
