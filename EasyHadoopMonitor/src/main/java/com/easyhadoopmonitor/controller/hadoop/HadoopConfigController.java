@@ -90,11 +90,11 @@ public class HadoopConfigController {
                 
             }
             save(doc,filename);
-
         }catch (JDOMException | IOException e) {
             log.error(e.toString());
             return 0;
         }
+        log.info(filename+" was created.");
         for(String datadir : datadirList)
             log.info("Create directory "+datadir+" "+runtime.exec("mkdir -p "+datadir));
 

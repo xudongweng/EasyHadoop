@@ -1,0 +1,120 @@
+2020-08-05 16:13:04 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:49) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-05 16:13:08 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:51) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-05 16:13:19 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:55) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 16:13:20 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:57) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:13:22 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:13:22 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:13:22 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:95) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:13:23 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:97) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:13:24 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:13:24 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:107) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:13:25 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:13:25 下午 [Thread: main][ Method: com.hadoop.HadoopGenerate.main(HadoopGenerate.java:67) ]
+INFO:192.168.3.71 : The hadoop has deployed.
+2020-08-05 16:19:04 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:49) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-05 16:19:08 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:51) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-05 16:19:17 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:55) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 16:19:18 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:57) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:19:20 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:19:20 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:19:20 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:95) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:19:20 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:97) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:19:21 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:19:22 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:107) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:19:22 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:19:23 下午 [Thread: main][ Method: com.hadoop.HadoopGenerate.main(HadoopGenerate.java:67) ]
+INFO:192.168.3.71 : The hadoop has deployed.
+2020-08-05 16:20:47 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:49) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-05 16:20:52 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:51) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-05 16:21:20 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:55) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 16:21:21 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:57) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:21:22 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:21:23 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:21:23 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:95) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:21:23 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:97) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:21:24 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:21:25 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:107) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:21:25 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:21:25 下午 [Thread: main][ Method: com.hadoop.HadoopGenerate.main(HadoopGenerate.java:67) ]
+INFO:192.168.3.71 : The hadoop has deployed.
+2020-08-05 16:22:55 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:49) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-05 16:23:00 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:51) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-05 16:23:08 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:55) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 16:23:09 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:57) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:23:11 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:23:11 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:23:11 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:95) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:23:11 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:97) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:23:13 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:23:13 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:107) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:23:14 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:23:14 下午 [Thread: main][ Method: com.hadoop.HadoopGenerate.main(HadoopGenerate.java:67) ]
+INFO:192.168.3.71 : The hadoop has deployed.
+2020-08-05 16:26:30 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:49) ]
+INFO:192.168.3.71 : Upload D:\software\hadoop\hadoop-2.8.5.tar.gz to 192.168.3.71.
+2020-08-05 16:26:34 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:51) ]
+INFO:192.168.3.71 : Uncompress hadoop-2.8.5.tar.gz.
+2020-08-05 16:26:43 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:55) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 16:26:44 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.configHadoop(HadoopController.java:57) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:26:45 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:26:46 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:26:46 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:95) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:26:46 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.uploadMonitor(HadoopController.java:97) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:26:47 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:103) ]
+INFO:192.168.3.71 : Find HadoopMonitor Pid.
+2020-08-05 16:26:48 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:107) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:26:48 下午 [Thread: main][ Method: com.hadoop.controller.HadoopController.shutdownMonitor(HadoopController.java:112) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:26:49 下午 [Thread: main][ Method: com.hadoop.HadoopGenerate.main(HadoopGenerate.java:67) ]
+INFO:192.168.3.71 : The hadoop has deployed.
