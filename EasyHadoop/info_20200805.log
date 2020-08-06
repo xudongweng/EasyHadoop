@@ -1,0 +1,1214 @@
+2020-08-05 16:44:43 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.71 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.71.
+2020-08-05 16:44:46 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.71 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-05 16:44:51 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:44:51 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:44:51 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:41) ]
+INFO:192.168.3.71 : JDK has deployed.
+2020-08-05 16:44:51 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.72 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.72.
+2020-08-05 16:44:55 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.72 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-05 16:45:03 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 16:45:03 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 16:45:06 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:34) ]
+INFO:192.168.3.72 : set JAVA_HOME.
+2020-08-05 16:45:06 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:36) ]
+INFO:192.168.3.72 : set CLASSPATH.
+2020-08-05 16:45:06 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:38) ]
+INFO:192.168.3.72 : set PATH.
+2020-08-05 16:45:06 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:41) ]
+INFO:192.168.3.72 : JDK has deployed.
+2020-08-05 16:45:06 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.73 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.73.
+2020-08-05 16:45:12 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.73 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-05 16:45:21 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 16:45:22 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 16:45:22 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:34) ]
+INFO:192.168.3.73 : set JAVA_HOME.
+2020-08-05 16:45:23 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:36) ]
+INFO:192.168.3.73 : set CLASSPATH.
+2020-08-05 16:45:23 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:38) ]
+INFO:192.168.3.73 : set PATH.
+2020-08-05 16:45:24 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:41) ]
+INFO:192.168.3.73 : JDK has deployed.
+2020-08-05 16:54:00 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:61) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 16:54:02 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:63) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 16:54:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:66) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 16:54:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:68) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:54:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:54:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:54:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:54:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:54:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:54:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:54:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:54:07 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:75) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 16:54:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:54:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:54:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:54:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:54:10 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect [url]:http://192.168.3.72:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 16:54:10 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:72) ]
+ERROR:192.168.3.72 : The zoo.cfg was configured which is failure.
+2020-08-05 16:54:10 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:54:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:54:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:54:11 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:75) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 16:54:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:54:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:54:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:54:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:54:33 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection timed out: connect [url]:http://192.168.3.73:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 16:54:34 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:72) ]
+ERROR:192.168.3.73 : The zoo.cfg was configured which is failure.
+2020-08-05 16:54:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:54:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:54:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:54:35 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:75) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 16:57:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:61) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 16:57:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:63) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 16:57:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:66) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 16:57:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:68) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 16:57:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:57:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:57:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:57:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:57:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:57:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:57:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:57:53 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:75) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 16:57:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:57:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:57:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:57:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:57:56 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect [url]:http://192.168.3.72:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 16:57:56 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:72) ]
+ERROR:192.168.3.72 : The zoo.cfg was configured which is failure.
+2020-08-05 16:57:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:57:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:57:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:57:57 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:75) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 16:57:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:57:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:57:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 16:57:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:80) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 16:58:19 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection timed out: connect [url]:http://192.168.3.73:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 16:58:19 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:72) ]
+ERROR:192.168.3.73 : The zoo.cfg was configured which is failure.
+2020-08-05 16:58:19 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:86) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 16:58:20 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:90) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 16:58:21 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:95) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 16:58:21 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:75) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:03:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:03:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:03:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:03:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:03:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:85) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:03:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:94) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:03:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:77) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:03:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:79) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:03:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:85) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:03:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:89) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:03:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:94) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:03:56 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:03:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:03:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:03:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:03:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:03:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:85) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:03:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:94) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:03:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:77) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:03:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:79) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:04:02 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection refused: connect [url]:http://192.168.3.72:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 17:04:02 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:74) ]
+ERROR:192.168.3.72 : The zoo.cfg was configured which is failure.
+2020-08-05 17:04:02 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:85) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:04:02 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:89) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:04:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:94) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:04:03 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:04:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:04:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:04:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:04:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:04:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:85) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:04:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:94) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:04:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:77) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:04:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:79) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:04:29 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection timed out: connect [url]:http://192.168.3.73:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 17:04:29 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:74) ]
+ERROR:192.168.3.73 : The zoo.cfg was configured which is failure.
+2020-08-05 17:04:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:85) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:04:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:89) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:04:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:94) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:04:30 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:06:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:06:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:06:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:06:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:06:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:06:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:06:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:06:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:06:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:06:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:06:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:06:47 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:06:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:06:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:06:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:06:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:06:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:06:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:06:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:06:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:06:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:06:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:06:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:06:52 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:06:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:06:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:06:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:06:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:06:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:06:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:06:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:06:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:07:21 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection timed out: connect [url]:http://192.168.3.73:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 17:07:21 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:74) ]
+ERROR:192.168.3.73 : The zoo.cfg was configured which is failure.
+2020-08-05 17:07:21 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:07:22 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:07:23 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:07:23 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:08:39 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:08:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:08:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:08:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:08:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:08:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:08:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:08:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:08:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:08:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:08:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:08:44 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:08:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:08:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:08:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:08:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:08:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:08:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:08:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:08:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:08:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:08:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:08:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:08:49 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:08:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:08:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:08:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:08:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:08:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:08:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:08:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:08:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:09:16 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection timed out: connect [url]:http://192.168.3.73:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 17:09:16 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:74) ]
+ERROR:192.168.3.73 : The zoo.cfg was configured which is failure.
+2020-08-05 17:09:16 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:09:17 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:09:18 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:09:18 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:15:43 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.71 : .ssh/authorized_keys is not exist.
+2020-08-05 17:15:43 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.71 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-05 17:15:43 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.72 : .ssh/authorized_keys is not exist.
+2020-08-05 17:15:44 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.72 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-05 17:15:45 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:28) ]
+ERROR:192.168.3.73 : .ssh/authorized_keys is not exist.
+2020-08-05 17:15:46 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:36) ]
+INFO:192.168.3.73 : mv .ssh/ id_rsa.pub .ssh/authorized_keys.
+2020-08-05 17:15:46 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7a : The compose authorized_keys.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7a : c7a and c7b generate new authorized_keys.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7a : c7a and c7c generate new authorized_keys.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7a :c7a key has deployed.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7b : The compose authorized_keys.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7b : c7b and c7a generate new authorized_keys.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7b : c7b and c7c generate new authorized_keys.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7b :c7b key has deployed.
+2020-08-05 17:15:47 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:63) ]
+INFO:c7c : The compose authorized_keys.
+2020-08-05 17:15:48 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7c : c7c and c7a generate new authorized_keys.
+2020-08-05 17:15:48 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:73) ]
+INFO:c7c : c7c and c7b generate new authorized_keys.
+2020-08-05 17:15:48 下午 [Thread: main][ Method: com.hadoop.controller.SSHConfigController.configSSH(SSHConfigController.java:83) ]
+INFO:c7c :c7c key has deployed.
+2020-08-05 17:15:55 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.71 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.71.
+2020-08-05 17:15:59 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.71 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-05 17:16:07 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:16:07 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:16:07 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:34) ]
+INFO:192.168.3.71 : set JAVA_HOME.
+2020-08-05 17:16:07 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:36) ]
+INFO:192.168.3.71 : set CLASSPATH.
+2020-08-05 17:16:08 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:38) ]
+INFO:192.168.3.71 : set PATH.
+2020-08-05 17:16:08 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:41) ]
+INFO:192.168.3.71 : JDK has deployed.
+2020-08-05 17:16:08 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.72 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.72.
+2020-08-05 17:16:11 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.72 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-05 17:16:19 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:16:19 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:16:20 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:34) ]
+INFO:192.168.3.72 : set JAVA_HOME.
+2020-08-05 17:16:20 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:36) ]
+INFO:192.168.3.72 : set CLASSPATH.
+2020-08-05 17:16:20 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:38) ]
+INFO:192.168.3.72 : set PATH.
+2020-08-05 17:16:20 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:41) ]
+INFO:192.168.3.72 : JDK has deployed.
+2020-08-05 17:16:20 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:24) ]
+INFO:192.168.3.73 : Upload D:\software\java\jdk-8u181-linux-x64.tar.gz to 192.168.3.73.
+2020-08-05 17:16:24 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:26) ]
+INFO:192.168.3.73 : Uncompress jdk-8u181-linux-x64.tar.gz.
+2020-08-05 17:16:42 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:29) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:16:43 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:31) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:16:45 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:34) ]
+INFO:192.168.3.73 : set JAVA_HOME.
+2020-08-05 17:16:48 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:36) ]
+INFO:192.168.3.73 : set CLASSPATH.
+2020-08-05 17:16:48 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:38) ]
+INFO:192.168.3.73 : set PATH.
+2020-08-05 17:16:49 下午 [Thread: main][ Method: com.hadoop.controller.JDKController.configJDK(JDKController.java:41) ]
+INFO:192.168.3.73 : JDK has deployed.
+2020-08-05 17:17:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:17:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:17:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:17:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:17:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:17:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:17:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:17:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:17:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:17:38 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:17:38 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:17:39 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:17:39 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:17:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:17:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:17:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:17:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:17:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:17:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:17:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:17:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:17:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:17:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:17:47 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:17:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:17:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:17:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:17:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:17:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:17:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:17:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:17:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:18:14 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection timed out: connect [url]:http://192.168.3.73:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 17:18:14 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:74) ]
+ERROR:192.168.3.73 : The zoo.cfg was configured which is failure.
+2020-08-05 17:18:14 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:18:15 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:18:16 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:18:16 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:23:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:23:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:23:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:23:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:23:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:23:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:23:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:23:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:23:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:23:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:23:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:23:48 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:23:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:23:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:23:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:23:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:23:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:23:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:23:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:23:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:23:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:23:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:23:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:23:53 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:23:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:23:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:23:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:23:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:23:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:23:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:23:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:23:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:24:19 下午 [Thread: main][ Method: com.hadoop.controller.RPCClientController.invokeZooWrite(RPCClientController.java:43) ]
+ERROR:org.apache.xmlrpc.XmlRpcException: Failed to read server's response: Connection timed out: connect [url]:http://192.168.3.73:10080,[dir]:/usr/local/zookeeper/conf,[filename]:zoo.cfg,[proplist]:[clientPort=2181, dataDir=/usr/local/zookeeper/data, syncLimit=5, initLimit=10, tickTime=2000, server.0=c7a:2888:3888, server.1=c7b:2888:3888, server.2=c7c:2888:3888]
+2020-08-05 17:24:19 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:74) ]
+ERROR:192.168.3.73 : The zoo.cfg was configured which is failure.
+2020-08-05 17:24:19 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:24:20 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:24:21 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:24:21 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:27:32 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:27:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:27:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:27:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:27:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:27:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:27:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:27:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:27:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:27:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:27:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:27:37 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:27:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:27:38 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:27:39 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:27:39 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:27:39 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:27:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:27:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:27:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:27:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:27:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:27:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:27:42 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:27:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:27:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:27:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:27:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:27:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:27:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:27:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:27:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:27:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:27:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:27:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:27:51 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:28:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:28:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:28:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:28:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:28:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:28:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:28:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:28:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:28:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:28:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:28:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:28:59 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:28:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:29:00 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:29:01 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:29:01 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:29:01 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:29:02 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:29:02 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:29:02 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:29:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:29:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:29:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:29:04 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:29:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:29:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:29:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:29:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:29:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:29:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:29:09 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:29:09 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:29:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:29:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:29:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:29:13 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:30:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:30:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:30:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:30:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:30:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:30:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:30:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:30:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:30:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:30:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:30:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:30:53 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:30:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:30:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:30:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:30:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:30:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:30:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:30:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:30:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:30:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:30:59 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:31:00 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:31:00 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:31:00 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:31:01 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:31:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:31:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:31:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:31:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:31:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:31:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:31:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:31:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:31:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:31:08 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:32:28 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:32:28 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:32:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:32:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:32:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:32:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:32:31 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:32:31 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:32:32 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:32:32 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:32:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:32:33 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:32:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:32:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:32:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:32:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:32:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:32:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:32:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:32:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:32:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:32:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:32:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:32:38 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:32:38 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:32:38 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:32:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:32:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:32:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:32:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:32:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:32:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:32:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:32:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:32:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:32:46 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:36:02 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:36:03 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:36:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:36:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:36:04 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:36:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:36:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:36:05 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:36:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:36:06 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:36:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:36:07 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:36:07 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:36:08 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:36:09 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:36:09 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:36:09 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:36:10 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:36:10 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:36:10 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:36:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:36:11 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:36:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:36:12 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:36:12 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:36:13 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:36:15 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:36:15 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:36:16 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:36:16 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:36:17 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:36:17 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:36:18 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:36:19 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:36:20 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:36:21 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:43:27 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:43:27 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:43:28 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:43:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:43:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:43:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:43:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:43:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:43:31 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:43:31 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:43:32 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:43:32 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:43:32 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:43:32 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:43:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:43:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:43:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:43:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:43:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:43:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:43:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:43:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:43:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:43:37 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:43:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:43:38 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:43:39 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:43:39 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:43:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:43:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:43:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:43:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:43:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:43:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:43:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:43:45 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:45:18 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:45:19 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:45:20 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:45:20 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:45:20 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:45:21 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:45:21 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:45:21 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:45:22 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:45:22 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:45:25 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:45:25 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:45:25 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:45:26 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:45:27 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:45:27 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:45:27 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:45:28 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:45:28 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:45:28 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:45:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:45:29 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:45:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:45:30 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:45:30 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:45:31 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:45:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:45:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:45:33 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:45:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:45:34 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:45:35 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:45:36 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:45:37 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:45:40 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:45:40 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.
+2020-08-05 17:47:41 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.71 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.71.
+2020-08-05 17:47:42 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.71 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:47:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.71 : clear /tmp.
+2020-08-05 17:47:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.71 : set environment of .bashrc.
+2020-08-05 17:47:43 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:47:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:47:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.71 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.71.
+2020-08-05 17:47:44 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.71 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:47:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.71 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:47:45 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.71 : Shutdown monitor.
+2020-08-05 17:47:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.71 : Clear /tmp.
+2020-08-05 17:47:46 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.71 : The zookeeper has deployed.
+2020-08-05 17:47:46 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.72 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.72.
+2020-08-05 17:47:47 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.72 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:47:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.72 : clear /tmp.
+2020-08-05 17:47:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.72 : set environment of .bashrc.
+2020-08-05 17:47:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:47:48 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:47:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.72 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.72.
+2020-08-05 17:47:49 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.72 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:47:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.72 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:47:50 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.72 : Shutdown monitor.
+2020-08-05 17:47:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.72 : Clear /tmp.
+2020-08-05 17:47:51 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.72 : The zookeeper has deployed.
+2020-08-05 17:47:51 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:60) ]
+INFO:192.168.3.73 : Upload D:\software\zookeeper-3.4.14.tar.gz to 192.168.3.73.
+2020-08-05 17:47:52 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:62) ]
+INFO:192.168.3.73 : Uncompress zookeeper-3.4.14.tar.gz.
+2020-08-05 17:47:53 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:65) ]
+INFO:192.168.3.73 : clear /tmp.
+2020-08-05 17:47:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.configZooKeeper(ZooKeeperController.java:67) ]
+INFO:192.168.3.73 : set environment of .bashrc.
+2020-08-05 17:47:54 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:47:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:47:55 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:76) ]
+INFO:192.168.3.73 : Upload D:\GitHub\EasyHadoop\EasyHadoopMonitor\target\EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar to 192.168.3.73.
+2020-08-05 17:47:56 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.uploadMonitor(ZooKeeperController.java:78) ]
+INFO:192.168.3.73 : Running EasyHadoopMonitor-1.0-SNAPSHOT-jar-with-dependencies.jar.
+2020-08-05 17:47:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:84) ]
+INFO:192.168.3.73 : Find ZooKeeperMonitor Pid.
+2020-08-05 17:47:57 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:88) ]
+INFO:192.168.3.73 : Shutdown monitor.
+2020-08-05 17:47:58 下午 [Thread: main][ Method: com.hadoop.controller.ZooKeeperController.shutdownMonitor(ZooKeeperController.java:93) ]
+INFO:192.168.3.73 : Clear /tmp.
+2020-08-05 17:47:59 下午 [Thread: main][ Method: com.hadoop.ZooKeeperGenerate.main(ZooKeeperGenerate.java:77) ]
+INFO:192.168.3.73 : The zookeeper has deployed.

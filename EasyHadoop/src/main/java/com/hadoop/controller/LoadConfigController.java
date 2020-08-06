@@ -28,16 +28,17 @@ public class LoadConfigController {
         File file = new File(cfgfile);
         if(!file.exists()){
             log.error("File "+file.getAbsolutePath()+cfgfile+" is not exist.");
-            return 0;
+            return -1;
         }
         //加载配置
         try{
             prop.load(new FileInputStream(cfgfile));
+            return Integer.valueOf(prop.getProperty("sameDeploy"));
         }catch(IOException e){
             log.error(e.toString());
-            return 0;
+            return -1;
         }
-        return 1;
+        
     }
     
     public List<LinuxHost> getcfgHosts(){

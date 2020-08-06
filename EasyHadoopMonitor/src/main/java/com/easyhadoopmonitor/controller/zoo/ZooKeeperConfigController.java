@@ -22,35 +22,25 @@ import org.apache.log4j.Logger;
 public class ZooKeeperConfigController {
     private final Logger log=Logger.getLogger(ZooKeeperConfigController.class);
     private final LinuxRunTimeHelper runtime=new LinuxRunTimeHelper();
-    public int createConfig(String dir,String filename){
-        File file=new File(dir,filename);
-        if (file.isFile()&&file.exists()){
-            file.delete();
-        }
-        try{
-            file.createNewFile();
-            return 1;
-        }catch(IOException e){
-            log.error(e.toString());
-            return 0;
-        }
-    }
 
     public int writeConfig(String dir,String filename,List<String> proplist){
         String hostname=runtime.exec("hostname");
+        //log.info("-----------------"+hostname+"---"+hostname.trim().length());
         String zoonum="0";
         String datadir="";
         try {
             OutputStream os = new FileOutputStream(new File(dir,filename));
-            for(String s:proplist){
-                log.info(s);
-                os.write(s.getBytes());
+            for(String prop:proplist){
+                log.info(prop);
+                os.write(prop.getBytes());
                 os.write("\n".getBytes());
-                if(s.contains("dataDir=")){
-                    datadir=s.substring(8);
-                    log.info("Create directory "+s+" "+runtime.exec("mkdir -p "+datadir));
-                }else if(s.contains(hostname)){
-                    zoonum=s.substring(7,8);
+                if(prop.contains("dataDir=")){
+                    datadir=prop.substring(8);
+                    log.info("Remove directory "+prop+" "+runtime.exec("rm -rf "+datadir));
+                    log.info("Create directory "+prop+" "+runtime.exec("mkdir -p "+datadir));
+                }else if(prop.contains(hostname.trim())){
+                    //log.info("-----------------"+prop+"---"+prop.substring(7,8));
+                    zoonum=prop.substring(7,prop.charAt('='));
                 }
             }
             os.flush();
