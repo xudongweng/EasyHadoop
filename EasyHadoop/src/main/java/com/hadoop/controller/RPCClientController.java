@@ -64,7 +64,7 @@ public class RPCClientController {
         client.setConfig(config);
         // 远程调用
         try {
-            result = (int) client.execute("Hadoop.createCfg", new Object[] { dir,filename });
+            //result = (int) client.execute("Hadoop.createCfg", new Object[] { dir,filename });
             result = (int) client.execute("Hadoop.writeCfg", new Object[] { dir,filename,proplist });
         } catch (XmlRpcException e) {
             log.error(e.toString()+" [url]:"+url+",[dir]:"+dir+",[filename]:"+filename+",[proplist]:"+proplist.toString());

@@ -65,6 +65,7 @@ public class HadoopConfigController {
     }
     
     public int writeConfig(String filename,List<String> contestlist){
+        
         SAXBuilder sb = new SAXBuilder();
         List<String> datadirList=new ArrayList<>();
         try {
@@ -74,7 +75,7 @@ public class HadoopConfigController {
                 Element elProperty=new Element("property");
                 String[] newval=contest.split("=");                
                 Element elName=new Element("name");
-                Element elVal=new Element("val");
+                Element elVal=new Element("value");
                 elName.addContent(newval[0]);
                 elVal.addContent(newval[1]);
                 elProperty.addContent(elName);

@@ -77,6 +77,9 @@ public class HadoopController {
         for(String hostname:hostnamelist){
             ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"echo \""+hostname+"\" >>/usr/local/hadoop/etc/hadoop/slaves");
         }
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"cp /usr/local/hadoop/etc/hadoop/mapred-site.xml.template /usr/local/hadoop/etc/hadoop/mapred-site.xml");
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"sed -i 's/\\${JAVA_HOME}/\\/usr\\/local\\/jdk/g'  /usr/local/hadoop/etc/hadoop/hadoop-env.s");
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"sed -i '1i\\export JAVA_HOME=\\/usr\\/local\\/jdk\\/' /usr/local/hadoop/etc/hadoop/yarn-env.sh");
     }
     
     public void setHostnameList(List<LinuxHost> hostlist){
