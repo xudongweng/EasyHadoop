@@ -27,7 +27,7 @@ public class ZooKeeperController {
     private final Properties prop = new OrderedProperties();//解决读取文件乱序
     private String jarfilename;
     private final String dst="/tmp";
-    private List<String> hostsList=new ArrayList<>();
+    private final List<String> hostsList=new ArrayList<>();
     
     public int loadFile(String cfgfile){
         File file = new File(cfgfile);

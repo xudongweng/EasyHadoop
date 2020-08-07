@@ -83,6 +83,16 @@ public class SSHConfigController {
              log.info(host1.getHostname()+" :"+host1.getHostname()+" key has deployed.");
         }
         
+        for(LinuxHost host:hostlist){
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "sed -i '/StrictHostKeyChecking/d' /etc/ssh/ssh_config" );
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "echo \"StrictHostKeyChecking no\">>/etc/ssh/ssh_config" );
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "sed -i '/UserKnownHostsFile/d' /etc/ssh/ssh_config" );
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),host.getPort(), "echo \"UserKnownHostsFile=/dev/null\">>/etc/ssh/ssh_config" );
+        }
+        
+        
         return 1;
     }
+    
+    
 }
