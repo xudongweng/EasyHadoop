@@ -52,7 +52,7 @@ public class HadoopConfigController {
             Format fm = Format.getPrettyFormat();
             //fm.setEncoding("gb2312");
             //fm.setEncoding("utf8");
-            fm.setEncoding("utf8");
+            fm.setEncoding("utf-8");
             xmlopt.setFormat(fm);
             // 将doc写入到指定的文件中
             xmlopt.output(doc, writer);
@@ -80,7 +80,7 @@ public class HadoopConfigController {
                 elProperty.addContent(elName);
                 elProperty.addContent(elVal);
                 root.addContent(elProperty);
-                
+                log.info(filename+"--"+contest);
                 if(newval[0].contains(".dir")&&!newval[1].contains("qjournal://")){
                     if(newval[1].contains("file://"))
                         datadirList.add(newval[1].replace("file://", ""));
@@ -95,9 +95,10 @@ public class HadoopConfigController {
             return 0;
         }
         log.info(filename+" was created.");
-        for(String datadir : datadirList)
+        for(String datadir : datadirList){
+            log.info("remove directory "+datadir+" "+runtime.exec("rm -rf "+datadir));
             log.info("Create directory "+datadir+" "+runtime.exec("mkdir -p "+datadir));
-
+        }
         return 1;
     }
 }

@@ -36,7 +36,7 @@ public class RPCClientController {
         }
         // 客户端设置
         client.setConfig(config);
-        // 远程调用
+        // 远程调用 
         try {
             result = (int) client.execute("ZooKeeper.writeCfg", new Object[] { dir,filename,proplist });
         } catch (XmlRpcException e) {

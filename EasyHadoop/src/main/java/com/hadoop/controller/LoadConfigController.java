@@ -5,6 +5,7 @@
  */
 package com.hadoop.controller;
 
+import com.hadoop.helper.OrderedProperties;
 import com.hadoop.model.InstallFiles;
 import com.hadoop.model.LinuxHost;
 import java.io.File;
@@ -21,7 +22,7 @@ import org.apache.log4j.Logger;
  */
 public class LoadConfigController {
     private final Logger log=Logger.getLogger(LoadConfigController.class);
-    private final Properties prop = new Properties();
+    private final Properties prop = new OrderedProperties();//解决读取文件乱序
     
     //private List<LinuxHost> hostlist=null;
     public int loadFile(String cfgfile){
@@ -33,6 +34,10 @@ public class LoadConfigController {
         //加载配置
         try{
             prop.load(new FileInputStream(cfgfile));
+            /*
+            for (String key : prop.stringPropertyNames()) { 
+                System.out.println(key + "=" + prop.getProperty(key)); 
+            } */
             return Integer.valueOf(prop.getProperty("sameDeploy"));
         }catch(IOException e){
             log.error(e.toString());

@@ -5,6 +5,7 @@
  */
 package com.hadoop.controller;
 
+import com.hadoop.helper.OrderedProperties;
 import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.LinuxHost;
 import java.io.File;
@@ -23,28 +24,40 @@ import org.apache.log4j.Logger;
 public class HadoopController {
     private final Logger log=Logger.getLogger(HadoopController.class);
     private final SSHLinuxHelper ssh=new SSHLinuxHelper();
-    private final Properties prop = new Properties();
+    private final Properties prop = new OrderedProperties();//解决读取文件乱序
     private final String dst="/tmp";
     private final List<String> hostnamelist=new ArrayList<>();
     private String jarfilename;
-    public int loadFile(String cfgfile){
+    
+    public List<String> loadCfg(String cfgfile){
+        Properties prop = new OrderedProperties();
         File file = new File(cfgfile);
         if(!file.exists()){
             log.error("File "+file.getAbsolutePath()+cfgfile+" is not exist.");
-            return 0;
+            return null;
         }
         //加载配置
         try{
             prop.load(new FileInputStream(cfgfile));
         }catch(IOException e){
             log.error(e.toString()+" [cfgfile]："+cfgfile);
-            return 0;
+            return null;
         }
-        return 1;
+        
+        
+        Enumeration<Object> keys = prop.keys();
+        List<String> list=new ArrayList<>();
+        while (keys.hasMoreElements()) {
+            String key = (String) keys.nextElement();
+            //System.out.println(key + "=" + prop.getProperty(key));
+            list.add(key+"="+this.replaceHostnames(prop.getProperty(key)));
+        }
+        prop.clear();
+        return list;
     }
     
-    public void configHadoop(List<LinuxHost> hostlist,String dir){
-        LinuxHost host=hostlist.get(0);
+    public void configHadoop(LinuxHost host,String dir){
+
         String filename=dir.substring(dir.lastIndexOf(File.separator)+1,dir.length());
         log.info(host.getIP()+" : Upload "+dir+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), dir, dst);//上传hadoop
@@ -60,6 +73,13 @@ public class HadoopController {
             ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd ~ \n echo \"HADOOP_HOME=/usr/local/hadoop export HADOOP_HOME \" >> .bashrc \n echo \"PATH=\\$PATH:\\$HADOOP_HOME/bin export PATH\" >> .bashrc \n source .bashrc");
         }
         
+        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"rm -rf /usr/local/hadoop/etc/hadoop/slaves");
+        for(String hostname:hostnamelist){
+            ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"echo \""+hostname+"\" >>/usr/local/hadoop/etc/hadoop/slaves");
+        }
+    }
+    
+    public void setHostnameList(List<LinuxHost> hostlist){
         //获取每台服务器的主机名
         for(LinuxHost hosts:hostlist){
              hostnamelist.add(ssh.execCmd(hosts.getIP(), hosts.getUser(), hosts.getPassword(), "hostname"));
@@ -77,20 +97,7 @@ public class HadoopController {
         return val;
     }
     
-    public List<String> getCfg(){
-        Enumeration<Object> keys = prop.keys();
-        List<String> l=new ArrayList<>();
-        while (keys.hasMoreElements()) {
-            String key = (String) keys.nextElement();
-            //System.out.println(key + "=" + prop.getProperty(key));
-            l.add(key+"="+this.replaceHostnames(prop.getProperty(key)));
-        }
-        prop.clear();
-        return l;
-    }
-    
-    public void uploadMonitor(List<LinuxHost> hostlist,String monitorpath){
-        LinuxHost host=hostlist.get(0);
+    public void uploadMonitor(LinuxHost host,String monitorpath){
         this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
         log.info(host.getIP()+" : Upload "+monitorpath+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
@@ -98,8 +105,7 @@ public class HadoopController {
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n nohup java -cp "+jarfilename+" com.easyhadoopmonitor.HadoopMonitor >/dev/null 2>&1 &");//运行上传jar包
     }
     
-    public void shutdownMonitor(List<LinuxHost> hostlist){
-        LinuxHost host=hostlist.get(0);
+    public void shutdownMonitor(LinuxHost host){
         log.info(host.getIP()+" : Find HadoopMonitor Pid.");
         String wc=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(),"jps|grep HadoopMonitor|wc -l");
         if(!wc.equals("0"))

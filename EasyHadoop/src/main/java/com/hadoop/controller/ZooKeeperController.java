@@ -5,6 +5,7 @@
  */
 package com.hadoop.controller;
 
+import com.hadoop.helper.OrderedProperties;
 import com.hadoop.helper.SSHLinuxHelper;
 import com.hadoop.model.LinuxHost;
 import java.io.File;
@@ -23,7 +24,7 @@ import org.apache.log4j.Logger;
 public class ZooKeeperController {
     private final Logger log=Logger.getLogger(ZooKeeperController.class);
     private final SSHLinuxHelper ssh=new SSHLinuxHelper();
-    private final Properties prop = new Properties();
+    private final Properties prop = new OrderedProperties();//解决读取文件乱序
     private String jarfilename;
     private final String dst="/tmp";
     private List<String> hostsList=new ArrayList<>();

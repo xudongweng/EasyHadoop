@@ -24,7 +24,7 @@ public class ZooKeeperGenerate {
         Logger log=Logger.getLogger(ZooKeeperGenerate.class);
         LoadConfigController lcc=new LoadConfigController();
         int deploy=lcc.loadFile("config.properties");//sameDeploy返回i值，deploy=-1为错误，0为部署第一台服务器，1为部署全部服务器
-        
+        if(deploy==-1)return;
         InstallFiles files=lcc.getInstallFiles();
 
         List<LinuxHost> hostlist=lcc.getcfgHosts();

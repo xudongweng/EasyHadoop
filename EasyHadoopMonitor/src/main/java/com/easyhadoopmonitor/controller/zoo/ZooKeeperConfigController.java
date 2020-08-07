@@ -31,7 +31,7 @@ public class ZooKeeperConfigController {
         try {
             OutputStream os = new FileOutputStream(new File(dir,filename));
             for(String prop:proplist){
-                log.info(prop);
+                log.info("Write " +prop);
                 os.write(prop.getBytes());
                 os.write("\n".getBytes());
                 if(prop.contains("dataDir=")){
@@ -39,8 +39,8 @@ public class ZooKeeperConfigController {
                     log.info("Remove directory "+prop+" "+runtime.exec("rm -rf "+datadir));
                     log.info("Create directory "+prop+" "+runtime.exec("mkdir -p "+datadir));
                 }else if(prop.contains(hostname.trim())){
-                    //log.info("-----------------"+prop+"---"+prop.substring(7,8));
-                    zoonum=prop.substring(7,prop.charAt('='));
+                    //log.info("-----------------"+prop+"---"+prop.indexOf("="));
+                    zoonum=prop.substring(7,prop.indexOf("="));
                 }
             }
             os.flush();
@@ -54,6 +54,7 @@ public class ZooKeeperConfigController {
 
     private void writeMyid(String zoonum,String datadir){
         try{
+            log.info("Write file myid" +datadir+":"+zoonum);
             File myidfile = new File(datadir+File.separator+"myid");
             if(!myidfile.isFile()){
                 myidfile.createNewFile();

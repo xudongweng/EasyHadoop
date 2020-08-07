@@ -23,47 +23,68 @@ public class HadoopGenerate {
     public static void main(String[] args){
         Logger log=Logger.getLogger(HadoopGenerate.class);
         LoadConfigController lcc=new LoadConfigController();
-        if(lcc.loadFile("config.properties")==0)return;
-        
+        int deploy=lcc.loadFile("config.properties");//sameDeploy返回i值，deploy=-1为错误，0为部署第一台服务器，1为部署全部服务器
+        if(deploy==-1)return;
         InstallFiles files=lcc.getInstallFiles();
 
         List<LinuxHost> hostlist=lcc.getcfgHosts();
         
         HadoopController hc=new HadoopController();
 
-        hc.configHadoop(hostlist, files.getHadoop());
-        
-        if(hc.loadFile("core.properties")==0)return;
-        List<String> corelist=hc.getCfg();
-        if(hc.loadFile("hdfs.properties")==0)return;
-        List<String> hdfslist=hc.getCfg();
-        if(hc.loadFile("mapred.properties")==0)return;
-        List<String> mapredlist=hc.getCfg();
-        if(hc.loadFile("yarn.properties")==0)return;
-        List<String> yarnlist=hc.getCfg();
-        //System.out.println(corelist);
-        //System.out.println(hdfslist);
-        //System.out.println(mapredlist);
-        //System.out.println(yarnlist);
-        hc.shutdownMonitor(hostlist);
-        hc.uploadMonitor(hostlist, files.getMonitor());//上传HadoopMonitor的jar
-        
-        
-        LinuxHost host=hostlist.get(0);
-        RPCClientController rpcClient=new RPCClientController();
-        if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","core-site.xml",corelist)==0){//调用名为hadoop的RPC
-            log.error(host.getIP()+" : "+"The core-site.xml was configured which is failure.");
+        hc.setHostnameList(hostlist);//主机名列表生成
+ 
+        List<String> corelist=hc.loadCfg("core.properties");
+        List<String> hdfslist=hc.loadCfg("hdfs.properties");
+        List<String> mapredlist=hc.loadCfg("mapred.properties");
+        List<String> yarnlist=hc.loadCfg("yarn.properties");
+        if(corelist==null||hdfslist==null||mapredlist==null||yarnlist==null)return;
+   
+        if(deploy==0){
+            LinuxHost host=hostlist.get(0);
+            
+            hc.configHadoop(host, files.getHadoop());
+            
+            hc.shutdownMonitor(host);
+            hc.uploadMonitor(host, files.getMonitor());//上传HadoopMonitor的jar
+
+            RPCClientController rpcClient=new RPCClientController();
+            if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","core-site.xml",corelist)==0){//调用名为hadoop的RPC
+                log.error(host.getIP()+" : "+"The core-site.xml was configured which is failure.");
+            }
+            if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","hdfs-site.xml",hdfslist)==0){//调用名为hadoop的RPC
+                log.error(host.getIP()+" : "+"The hdfs-site.xml was configured which is failure.");
+            }
+            if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","mapred-site.xml",mapredlist)==0){//调用名为hadoop的RPC
+                log.error(host.getIP()+" : "+"The mapred-site.xml was configured which is failure.");
+            }
+            if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","/yarn-site.xml",yarnlist)==0){//调用名为hadoop的RPC
+                log.error(host.getIP()+" : "+"The /yarn-site.xml was configured which is failure.");
+            }
+            hc.shutdownMonitor(host);//关闭ZooKeeperMonitor的jar线程
+            log.info(host.getIP()+" : "+"The hadoop has deployed.");
+        }else{
+            for(LinuxHost host:hostlist){
+                hc.configHadoop(host, files.getHadoop());
+                
+                hc.shutdownMonitor(host);
+                hc.uploadMonitor(host, files.getMonitor());//上传HadoopMonitor的jar
+
+                RPCClientController rpcClient=new RPCClientController();
+                if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","core-site.xml",corelist)==0){//调用名为hadoop的RPC
+                    log.error(host.getIP()+" : "+"The core-site.xml was configured which is failure.");
+                }
+                if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","hdfs-site.xml",hdfslist)==0){//调用名为hadoop的RPC
+                    log.error(host.getIP()+" : "+"The hdfs-site.xml was configured which is failure.");
+                }
+                if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","mapred-site.xml",mapredlist)==0){//调用名为hadoop的RPC
+                    log.error(host.getIP()+" : "+"The mapred-site.xml was configured which is failure.");
+                }
+                if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","/yarn-site.xml",yarnlist)==0){//调用名为hadoop的RPC
+                    log.error(host.getIP()+" : "+"The /yarn-site.xml was configured which is failure.");
+                }
+                hc.shutdownMonitor(host);//关闭ZooKeeperMonitor的jar线程
+                log.info(host.getIP()+" : "+"The hadoop has deployed.");
+            }
         }
-        if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","hdfs-site.xml",hdfslist)==0){//调用名为hadoop的RPC
-            log.error(host.getIP()+" : "+"The hdfs-site.xml was configured which is failure.");
-        }
-        if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","mapred-site.xml",mapredlist)==0){//调用名为hadoop的RPC
-            log.error(host.getIP()+" : "+"The mapred-site.xml was configured which is failure.");
-        }
-        if(rpcClient.invokeHadoopWrite("http://"+host.getIP()+":10080","/usr/local/hadoop/etc/hadoop","/yarn-site.xml",yarnlist)==0){//调用名为hadoop的RPC
-            log.error(host.getIP()+" : "+"The /yarn-site.xml was configured which is failure.");
-        }
-        hc.shutdownMonitor(hostlist);//关闭ZooKeeperMonitor的jar线程
-        log.info(host.getIP()+" : "+"The hadoop has deployed.");
     }
 }
