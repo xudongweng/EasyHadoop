@@ -17,14 +17,22 @@ import org.apache.log4j.Logger;
 public class JDKController {
     private final Logger log=Logger.getLogger(JDKController.class);
     private final SSHLinuxHelper ssh=new SSHLinuxHelper();
-    public void configJDK(LinuxHost host,String filepath){
+    public void configJDK(LinuxHost host,String dir){
         
         String dst="/tmp";
-        String filename=filepath.substring(filepath.lastIndexOf(File.separator)+1,filepath.length());
-        log.info(host.getIP()+" : Upload "+filepath+" to "+host.getIP()+".");
-        ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), filepath, dst);//上传jdk
+        String filename="";
+        if(dir.contains("\\"))
+            filename=dir.substring(dir.lastIndexOf("\\")+1,dir.length());
+        else if(dir.contains("/"))
+            filename=dir.substring(dir.lastIndexOf("/")+1,dir.length());
+        log.info(host.getIP()+" : Upload "+dir+" to "+host.getIP()+".");
+        ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), dir, dst);//上传jdk
         log.info(host.getIP()+" : Uncompress "+filename+".");
-        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n tar zxf "+filename);//解压jdk
+        log.info(host.getIP()+" :cd "+dst+" \n tar zxf "+filename);
+        if(ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n tar zxf "+filename).contains("bash:")){//解压jdk
+            log.error(host.getIP()+": Command(cd "+dst+" \n tar zxf "+filename+") is error");
+            return;
+        }
         String jdkfile=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "ls "+dst+" |grep jdk |grep -v gz ");
         log.info(host.getIP()+" : Clear "+dst+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "rm -rf /usr/local/jdk \n mv "+dst+"/"+jdkfile +" /usr/local/jdk \n rm -rf "+dst+"/*.gz");//移动解压后的jdk，删除上传文件

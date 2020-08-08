@@ -47,12 +47,17 @@ public class ZooKeeperGenerate {
             i++;
             zkc.addHostsList(host.getIP(), host.getHostname());
         }
-        
+        if(!lcc.fileExist(files.getZooKeeper())){ 
+            log.error(files.getZooKeeper() +" is not exist.");
+            return;
+        }
         if(deploy==0){
             LinuxHost host=hostlist.get(0);
-            zkc.configZooKeeper(host, files.getZooKeeper());//上传zookeeper安装文件
+            
             zkc.shutdownMonitor(host);//确保之前没有jar的线程，如果有则删除。
             zkc.uploadMonitor(host, files.getMonitor());//上传ZooKeeperMonitor的jar
+            //上传zookeeper安装文件
+            if(zkc.configZooKeeper(host, files.getZooKeeper())==0)return;
 
             //System.out.println(map.toString());
             RPCClientController rpcClient=new RPCClientController();
@@ -64,10 +69,12 @@ public class ZooKeeperGenerate {
             log.info(host.getIP()+" : "+"The zookeeper has deployed.");
         }else{
             for(LinuxHost host:hostlist){
-                zkc.configZooKeeper(host, files.getZooKeeper());//上传zookeeper安装文件
+                
                 zkc.shutdownMonitor(host);//确保之前没有jar的线程，如果有则删除。
                 zkc.uploadMonitor(host, files.getMonitor());//上传ZooKeeperMonitor的jar
-
+                //上传zookeeper安装文件
+                if(zkc.configZooKeeper(host, files.getZooKeeper())==0)return;
+                
                 //System.out.println(map.toString());
                 RPCClientController rpcClient=new RPCClientController();
                 //执行zookeeper配置文件的写入

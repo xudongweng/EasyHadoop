@@ -72,4 +72,9 @@ public class LoadConfigController {
     public void close(){
         prop.clear();
     }
+    
+    public boolean fileExist(String dir){
+        File file=new File(dir);
+        return file.exists();
+    }
 }

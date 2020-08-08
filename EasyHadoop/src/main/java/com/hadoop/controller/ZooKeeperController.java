@@ -61,13 +61,21 @@ public class ZooKeeperController {
         this.hostsList.add(ip+" "+hostname);
     }
     
-    public void configZooKeeper(LinuxHost host,String dir){
+    public int configZooKeeper(LinuxHost host,String dir){
         //String filepath=files.getZooKeeper();
-        String filename=dir.substring(dir.lastIndexOf(File.separator)+1,dir.length());
+        String filename="";
+        if(dir.contains("\\"))
+            filename=dir.substring(dir.lastIndexOf("\\")+1,dir.length());
+        else if(dir.contains("/"))
+            filename=dir.substring(dir.lastIndexOf("/")+1,dir.length());
         log.info(host.getIP()+" : Upload "+dir+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), dir, dst);//上传zookeeper
         log.info(host.getIP()+" : Uncompress "+filename+".");
-        ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n tar zxf "+filename);//解压zookeeper
+        //解压zookeeper
+        if(ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "cd "+dst+" \n tar zxf "+filename).contains("bash:")){
+            log.error(host.getIP()+": Command(cd "+dst+" \n tar zxf "+filename+") is error");
+            return 0;
+        }
         String zoofile=ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "ls "+dst+" |grep zookeeper |grep -v gz ");
         log.info(host.getIP()+" : clear "+dst+".");
         ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "rm -rf /usr/local/zookeeper \n mv "+dst+"/"+zoofile +" /usr/local/zookeeper \n rm -rf "+dst+"/*.gz");//移动解压后的zookeeper，删除上传文件
@@ -81,10 +89,14 @@ public class ZooKeeperController {
         for(String hostsString:hostsList){
             ssh.execCmd(host.getIP(), host.getUser(), host.getPassword(), "echo \""+hostsString+"\">>/etc/hosts");
         }
+        return 1;
     }
     
     public void uploadMonitor(LinuxHost host,String monitorpath){
-        this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
+        if(monitorpath.contains("\\"))
+            this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf("\\")+1,monitorpath.length());
+        else if(monitorpath.contains("/"))
+            this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf("/")+1,monitorpath.length());
         log.info(host.getIP()+" : Upload "+monitorpath+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
         log.info(host.getIP()+" : Running "+this.jarfilename+".");

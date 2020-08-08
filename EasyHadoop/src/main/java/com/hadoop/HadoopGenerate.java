@@ -26,7 +26,10 @@ public class HadoopGenerate {
         int deploy=lcc.loadFile("config.properties");//sameDeploy返回i值，deploy=-1为错误，0为部署第一台服务器，1为部署全部服务器
         if(deploy==-1)return;
         InstallFiles files=lcc.getInstallFiles();
-
+        if(!lcc.fileExist(files.getHadoop())){ 
+            log.error(files.getHadoop() +" is not exist.");
+            return;
+        }
         List<LinuxHost> hostlist=lcc.getcfgHosts();
         
         HadoopController hc=new HadoopController();

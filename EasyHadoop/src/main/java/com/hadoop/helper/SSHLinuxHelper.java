@@ -161,8 +161,10 @@ public class SSHLinuxHelper {
             session.connect();
             //3、在该session会话中开启一个SFTP通道，之后就可以在该通道中进行文件传输了
             ChannelSftp channelSftp = (ChannelSftp)session.openChannel("sftp");
+            
             channelSftp.connect();
             try {
+                //channelSftp.setFilenameEncoding("gbk");
                 //4、进行文件传输操作：put()、get()....
                 channelSftp.put(sFile, dst);
             } catch (SftpException e) {

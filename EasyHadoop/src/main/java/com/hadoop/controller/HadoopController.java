@@ -57,8 +57,11 @@ public class HadoopController {
     }
     
     public void configHadoop(LinuxHost host,String dir){
-
-        String filename=dir.substring(dir.lastIndexOf(File.separator)+1,dir.length());
+        String filename="";
+        if(dir.contains("\\"))
+            filename=dir.substring(dir.lastIndexOf("\\")+1,dir.length());
+        else if(dir.contains("/"))
+            filename=dir.substring(dir.lastIndexOf("/")+1,dir.length());
         log.info(host.getIP()+" : Upload "+dir+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), dir, dst);//上传hadoop
         log.info(host.getIP()+" : Uncompress "+filename+".");
@@ -101,7 +104,10 @@ public class HadoopController {
     }
     
     public void uploadMonitor(LinuxHost host,String monitorpath){
-        this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf(File.separator)+1,monitorpath.length());
+        if(monitorpath.contains("\\"))
+            this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf("\\")+1,monitorpath.length());
+        else if(monitorpath.contains("/"))
+            this.jarfilename=monitorpath.substring(monitorpath.lastIndexOf("/")+1,monitorpath.length());
         log.info(host.getIP()+" : Upload "+monitorpath+" to "+host.getIP()+".");
         ssh.uploadfile(host.getIP(), host.getUser(), host.getPassword(), monitorpath, dst);//上传EasyHadoopMonitor.jar
         log.info(host.getIP()+" : Running "+this.jarfilename+".");
